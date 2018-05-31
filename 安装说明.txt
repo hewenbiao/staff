@@ -1,0 +1,59 @@
+后台登录方法是：安装网站系统后，在你的网址后加admin，管理员帐号:admin，密码:admin
+    运行本程序，需要你的主机或者虚拟主机配置有
+系统运行环境：可用的httpd服务器(如 Apache、Nginx、IIS 等) / PHP 4.3.0 及以上 / MySQL 4.0.0 及以上
+
+    本机调试可以自己配置系统运行环境，配置教程请下载PHP环境一键安装包，
+下载网址：http://www.wygk.net.cn/dow/phpmysqlzend.rar
+里面有环境的安装和使用教程，可详细看看。
+
+●如使用的虚拟主机，请向空间商索取MYSQL数据库的网址，数据库用户名，数据库密码，数据库名称。
+
+自动安装方法：
+
+第一步：上传本软件包内的所有文件及目录至您的服务器站点目录。
+第二步：如果安装网软志成B2B2C多用户电商平台系统的站点访问网址为http://www.abc.com/，则访问http://www.abc.com/install/进入程序安装向导。
+第三步：根据安装向导提示设置必要的数据库连接参数以及必要的文件属性完成系统安装。
+
+
+手动安装方法：
+
+
+●如在本机安装调试的，可以用下载网址：http://www.wygk.net.cn/dow/phpmysqlzend.rar，下载安装后有一个phpstudy配置的php运行环境。数据库用户名和密码默认为root，数据库网址为localhost
+
+本机可用http://localhost/install进行安装。
+
+●如有必要，可修改系统主配置文件：data/config.php,数据库文件：install/db/b2b2cwygkcn.sql
+
+
+
+网软志成B2B2C多用户电商平台系统演示说明：
+
+功能介绍网址：http://www.wygk.cn/wrzcnet_b2b2c.asp
+
+电脑版前台演示网址: http://b2b2c.wygk.cn
+电脑版后台演示网址：http://b2b2c.wygk.cn/admin
+账号：admin  
+密码：admin
+
+电脑版前台会员演示登录：http://b2b2c.wygk.cn/user.php
+电脑版前台会员中心账号：yiren
+电脑版前台会员中心密码：admin
+
+手机版前台演示,在手机浏览器，或者微信，打开 http://b2b2c.wygk.cn
+手机版后台演示，http://b2b2c.wygk.cn/mobile/admin/
+账号：admin  
+密码：admin
+
+手机版前台会员演示登录：http://b2b2c.wygk.cn/mobile/user.php
+手机版前台会员中心账号：yiren
+手机版前台会员中心密码：admin
+
+电脑版商家前台演示1：http://b2b2c.wygk.cn/supplier.php?suppId=5
+电脑版商家管理：http://b2b2c.wygk.cn/supplier/privilege.php?act=login
+账号：test
+密码：admin
+
+手机版商家前台演示1：http://b2b2c.wygk.cn/mobile/supplier.php?suppId=2
+手机版商家管理：http://b2b2c.wygk.cn/mobile/supplier/privilege.php?act=login
+账号：test
+密码：admin
