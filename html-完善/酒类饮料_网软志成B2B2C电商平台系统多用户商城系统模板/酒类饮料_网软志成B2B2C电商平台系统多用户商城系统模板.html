@@ -1,0 +1,3526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0038)http://b2b2c.wygk.cn/category.php?id=7 -->
+<html xmlns="##"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="##">--><base href="##">
+
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<title>酒类饮料_网软志成B2B2C电商平台系统多用户商城系统模板</title>
+<link rel="shortcut icon" href="##">
+<link rel="icon" href="##">
+<link rel="stylesheet" type="text/css" href="${ctx}/statics/css/category.css">
+<script>var jdpts = new Object(); jdpts._st = new Date().getTime();</script>
+<script type="text/javascript" src="${ctx}/statics/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="${ctx}/statics/js/jquery-lazyload.js"></script>
+<script type="text/javascript" src="${ctx}/statics/js/common.js"></script><script type="text/javascript" src="${ctx}/statics/js/global.js"></script><script type="text/javascript" src="${ctx}/statics/js/compare.js"></script><script type="text/javascript" src="${ctx}/statics/js/utils.js"></script><script type="text/javascript" src="${ctx}/statics/js/jquery.json.js"></script><script type="text/javascript" src="${ctx}/statics/js/transport.js"></script><script type="text/javascript" src="${ctx}/statics/js/user.js"></script></head>
+<body style="cursor: auto;">  <link rel="stylesheet" type="text/css" href="${ctx}/statics/css/wrzc_common.css">
+<script language="javascript"> 
+<!--
+/*屏蔽所有的js错误*/
+function killerrors() { 
+return true; 
+} 
+window.onerror = killerrors; 
+//-->
+</script>
+<script type="text/javascript" src="${ctx}/statics/js/page.js"></script>
+<script type="text/javascript" src="${ctx}/statics/js/bubbleup.js"></script>
+<div id="site-nav">
+  <div class="sn-container w1210"> 
+    <script type="text/javascript" src="${ctx}/statics/js/common.min.js"></script> 
+    <font id="login-info" class="sn-login-info"> 
+<em>欢迎光临本店!</em>
+<a class="sn-login main-color" href="##">请登录</a>
+<a class="sn-login main-color" href="##">微信登陆</a>
+<a class="sn-register" href="##">免费注册</a> 
+</font>
+    <ul class="sn-quick-menu">
+      <li class="sn-mytaobao menu-item">
+        <div class="sn-menu"> 
+          <a class="menu-hd" href="##">我的信息<b></b></a>
+          <div id="menu-2" class="menu-bd">
+            <div class="menu-bd-panel"> 
+            	<a href="##">已买到的宝贝</a> 
+                <a href="##">我的地址管理</a> 
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="sn-mystores"> 
+        <a target="_top" class="sn-stores header-icon main-color" href="##"><i></i>我关注的店铺</a> 
+      </li>
+      <li class="sn-cart mini-cart menu"> 
+        <a id="mc-menu-hd" class="sn-cart header-icon main-color" href="##"><i></i>购物车</a> 
+      </li>
+      <li class="sn-favorite menu-item">
+        <div class="sn-menu"> 
+          <a class="menu-hd" href="##">收藏夹<b></b></a>
+          <div id="menu-4" class="menu-bd">
+            <div class="menu-bd-panel"> 
+            	<a href="##">收藏的宝贝</a> 
+                <a href="##">收藏的店铺</a> 
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="sn-separator"></li>
+      <script type="text/javascript">
+		function show_qcord(){
+			var qs=document.getElementById('sn-qrcode');
+			qs.style.display="block";
+		}
+		function hide_qcord(){
+			var qs=document.getElementById('sn-qrcode');
+			qs.style.display="none";
+		}
+	  </script>
+      <li class="sn-favorite menu-item">
+        <div class="sn-menu"> 
+          <a class="menu-hd" href="##">卖家中心<b></b></a>
+          <div id="menu-4" class="menu-bd">
+            <div class="menu-bd-panel"> 
+            	<a href="##">商家入驻</a> 
+                <a href="##">商家中心</a> 
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="menu-item">
+        <div class="sn-menu"> 
+          <a class="menu-hd sn-mobile" href="##">手机版<b></b></a>
+          <div class="menu-bd sn-qrcode" id="menu-5">
+           <ul>
+            <li class="app_down">
+              <a href="##"></a>
+			  <p>微信商城</p>
+              <img src="${ctx}/statics/images/app.jpg" alt="请用手机浏览器扫描" width="86px" height="240px">               
+            </li>                    
+          </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+header_login();
+function header_login()
+{	
+	Ajax.call('login_act_ajax.php', '', loginactResponse, 'GET', 'JSON', '1', '1');
+}
+function loginactResponse(result)
+{
+	var MEMBERZONE =document.getElementById('login-info');
+	MEMBERZONE.innerHTML= result.memberinfo;
+}
+</script><div class="header">
+	<div class="w1210">
+  		<div class="mall-logo"> <a href="##"><img src="${ctx}/statics/images/logo.gif" width="250"></a> </div>
+  		<div class="mall-logo-right"> <a href="##"></a> </div>
+  		<div class="mall-search">
+    <div id="search-tips" style="display:none;"></div>
+    <form class="mallSearch-form" method="get" name="searchForm" id="searchForm" action="##" onsubmit="return checkSearchForm()">
+      <input type="hidden" name="type" id="searchtype" value="0">
+      <div class="mallSearch-input">
+        <ul class="search-type">
+          <li class="cur" num="0">宝贝<i class="icon-down"></i></li>
+          <li num="1">店铺<i class="icon-down"></i></li>
+        </ul>
+        <div class="s-combobox">
+          <div class="s-combobox-input-wrap">
+            <input aria-haspopup="true" role="combobox" class="s-combobox-input" name="keywords" id="keyword" tabindex="9" accesskey="s" onkeyup="STip(this.value, event);" autocomplete="off" value="请输入关键词" onfocus="if(this.value==&#39;请输入关键词&#39;){this.value=&#39;&#39;;}else{this.value=this.value;}" onblur="if(this.value==&#39;&#39;)this.value=&#39;请输入关键词&#39;" type="text">
+          </div>
+        </div>
+        <input type="submit" value="搜索" class="button main-bg-color">
+      </div>
+    </form>
+    <ul class="hot-query">
+            <li style="border-left: none;"> <a href="##">网软志成</a> </li>
+            <li> <a href="##">iPhone5</a> </li>
+            <li> <a href="##">NZXT</a> </li>
+            <li> <a href="##">旅行包</a> </li>
+            <li> <a href="##">格力电暖器</a> </li>
+            <li> <a href="##">年货先到家</a> </li>
+            <li> <a href="##">MX2</a> </li>
+          </ul>
+  </div>
+  		<ul class="header-right"> 
+    <li> <a href="##"><img src="${ctx}/statics/images/7day.jpg"></a></li>
+    <li> <a href="##"><img src="${ctx}/statics/images/guarantee.jpg"></a></li>
+    <li> <a href="##"><img src="${ctx}/statics/images/delivery.jpg"></a></li>
+</ul> 	</div>
+</div>
+<div class="all-nav all-nav-border">
+  <div class="w1210">
+      <div class="home-category fl" onmouseover="_show_(this)" onmouseout="_hide_(this)"> 
+        <a href="##">全部商品分类<i></i></a> 
+        <div class="expand-menu all-cat main-bg-color"> 
+                <div class="list">
+          <dl class="cat">
+            <dt class="cat-name"> <a href="##">家用电器</a> </dt>
+            <i>&gt;</i>
+          </dl>
+          <div class="categorys" style="display: none;">
+            <div class="item-left fl"> 
+              
+               
+               
+               
+               
+                           
+              <div class="item-channels">
+                <div class="channels"> <a href="##">饮水机<i>&gt;</i></a> </div>
+              </div>
+              
+               
+               
+               
+               
+                           
+              <div class="item-channels">
+                <div class="channels"> <a href="##">微波炉<i>&gt;</i></a> </div>
+              </div>
+              
+               
+               
+                           
+              <div class="item-channels">
+                <div class="channels"> <a href="##">果蔬解毒机<i>&gt;</i></a> </div>
+              </div>
+              
+               
+               
+               
+               
+                           
+              <div class="item-channels">
+                <div class="channels"> <a href="##">剃须刀<i>&gt;</i></a> </div>
+              </div>
+              
+               
+               
+                           
+              <div class="item-channels">
+                <div class="channels"> <a href="##">血糖仪<i>&gt;</i></a> </div>
+              </div>
+              
+               
+               
+                            <div class="subitems"> 
+                                <dl class="fore1">
+                  <dt> <a href="##">大家电<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">平板电视</a> 
+                     
+                    <a href="##">空调冰箱</a> 
+                     
+                    <a href="##">洗衣机</a> 
+                     
+                    <a href="##">家庭影院</a> 
+                     
+                    <a href="##">烟机/灶具</a> 
+                     
+                    <a href="##">热水器</a> 
+                     
+                    <a href="##">消毒柜/洗碗机</a> 
+                     
+                    <a href="##">冷柜/冰吧</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">生活电器<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">电风扇</a> 
+                     
+                    <a href="##">净化器</a> 
+                     
+                    <a href="##">加湿器</a> 
+                     
+                    <a href="##">吸尘器</a> 
+                     
+                    <a href="##">挂烫机/熨斗</a> 
+                     
+                    <a href="##">取暖电器</a> 
+                     
+                    <a href="##">饮水机</a> 
+                     
+                    <a href="##">其它生活电器</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">厨房电器<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">电饭煲</a> 
+                     
+                    <a href="##">微波炉</a> 
+                     
+                    <a href="##">电磁炉</a> 
+                     
+                    <a href="##">电饼铛/烧烤盘</a> 
+                     
+                    <a href="##">电炖锅</a> 
+                     
+                    <a href="##">果蔬解毒机</a> 
+                     
+                    <a href="##">养生壶/煎药壶</a> 
+                     
+                    <a href="##">其它厨房电器</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">个护健康<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">剃须刀</a> 
+                     
+                    <a href="##">电吹风</a> 
+                     
+                    <a href="##">按摩椅</a> 
+                     
+                    <a href="##">足浴盆</a> 
+                     
+                    <a href="##">健康秤/厨房秤</a> 
+                     
+                    <a href="##">血糖仪</a> 
+                     
+                    <a href="##">计步器/脂肪检测</a> 
+                     
+                    <a href="##">其它健康电器</a> 
+                     
+                  </dd>
+                </dl>
+                 
+              </div>
+            </div>
+            <div class="item-right fr">
+              <div class="item-brands">
+                <div class="brands-inner"> 
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437433779804083933.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437433767280039957.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437433840630073088.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437433795060834486.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437433823734794032.gif" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437430441802693617.png" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437434172223731860.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437430374768843113.jpg" width="90" height="36"> </a>  
+                   
+                </div>
+              </div>
+                                          <div class="item-promotions">  <a href="##"><img src="${ctx}/statics/images/1453362914810023437.jpg" width="182"></a>  <a href="##"><img src="${ctx}/statics/images/1453362954584810931.jpg" width="182"></a>  </div>
+               
+            </div>
+          </div>
+        </div>
+                <div class="list">
+          <dl class="cat">
+            <dt class="cat-name"> <a href="##">手机、数码、通信</a> </dt>
+            <i>&gt;</i>
+          </dl>
+          <div class="categorys">
+            <div class="item-left fl"> 
+              
+               
+               
+               
+               
+                           
+              <div class="item-channels">
+                <div class="channels"> <a href="##">手机耳机<i>&gt;</i></a> </div>
+              </div>
+              
+               
+               
+               
+               
+               
+               
+                           
+              <div class="item-channels">
+                <div class="channels"> <a href="##">智能手表<i>&gt;</i></a> </div>
+              </div>
+              
+               
+               
+                            <div class="subitems"> 
+                                <dl class="fore1">
+                  <dt> <a href="##">热卖手机<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">三星盖乐世</a> 
+                     
+                    <a href="##">iPhone</a> 
+                     
+                    <a href="##">小米特供</a> 
+                     
+                    <a href="##">魅族手机</a> 
+                     
+                    <a href="##">华为荣耀</a> 
+                     
+                    <a href="##">联通4G</a> 
+                     
+                    <a href="##">电信4G</a> 
+                     
+                    <a href="##">移动4G</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">手机配件<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">电池</a> 
+                     
+                    <a href="##">移动电源</a> 
+                     
+                    <a href="##">蓝牙耳机</a> 
+                     
+                    <a href="##">充电器</a> 
+                     
+                    <a href="##">创意配件</a> 
+                     
+                    <a href="##">手机饰品</a> 
+                     
+                    <a href="##">手机耳机</a> 
+                     
+                    <a href="##">保护套</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">数码影音<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">数码相机</a> 
+                     
+                    <a href="##">单反相机</a> 
+                     
+                    <a href="##">拍立得</a> 
+                     
+                    <a href="##">运动相机</a> 
+                     
+                    <a href="##">摄像机</a> 
+                     
+                    <a href="##">户外器材</a> 
+                     
+                    <a href="##">数码相框</a> 
+                     
+                    <a href="##">影棚器材</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">智能设备<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">智能手环</a> 
+                     
+                    <a href="##">智能手表</a> 
+                     
+                    <a href="##">智能眼镜</a> 
+                     
+                    <a href="##">运动跟踪器</a> 
+                     
+                    <a href="##">智能家居</a> 
+                     
+                    <a href="##">体感车</a> 
+                     
+                  </dd>
+                </dl>
+                 
+              </div>
+            </div>
+            <div class="item-right fr">
+              <div class="item-brands">
+                <div class="brands-inner"> 
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437430325761583576.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437430309280593896.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437430289405669696.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437433854063455383.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437430574094435270.png" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437430366575268584.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437430460743432443.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437430298555384602.jpg" width="90" height="36"> </a>  
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                </div>
+              </div>
+                             
+            </div>
+          </div>
+        </div>
+                <div class="list">
+          <dl class="cat">
+            <dt class="cat-name"> <a href="##">电脑、办公</a> </dt>
+            <i>&gt;</i>
+          </dl>
+          <div class="categorys">
+            <div class="item-left fl"> 
+              
+                            <div class="subitems"> 
+                 
+              </div>
+            </div>
+            <div class="item-right fr">
+              <div class="item-brands">
+                <div class="brands-inner"> 
+                   
+                </div>
+              </div>
+                             
+            </div>
+          </div>
+        </div>
+                <div class="list">
+          <dl class="cat">
+            <dt class="cat-name"> <a href="##">家居、家具、家装、厨具</a> </dt>
+            <i>&gt;</i>
+          </dl>
+          <div class="categorys">
+            <div class="item-left fl"> 
+              
+               
+               
+                           
+              <div class="item-channels">
+                <div class="channels"> <a href="##">家纺<i>&gt;</i></a> </div>
+              </div>
+              
+               
+               
+               
+               
+               
+               
+               
+               
+                           
+              <div class="item-channels">
+                <div class="channels"> <a href="##">吊灯<i>&gt;</i></a> </div>
+              </div>
+              
+               
+               
+               
+               
+               
+               
+                            <div class="subitems"> 
+                                <dl class="fore1">
+                  <dt> <a href="##">家纺<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">床品套件</a> 
+                     
+                    <a href="##">被子</a> 
+                     
+                    <a href="##">蚊帐</a> 
+                     
+                    <a href="##">凉席</a> 
+                     
+                    <a href="##">床单被罩</a> 
+                     
+                    <a href="##">毛巾浴巾</a> 
+                     
+                    <a href="##">床垫/床褥</a> 
+                     
+                    <a href="##">窗帘/窗纱</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">家具<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">卧室家具</a> 
+                     
+                    <a href="##">客厅家具</a> 
+                     
+                    <a href="##">餐厅家具</a> 
+                     
+                    <a href="##">书房家具</a> 
+                     
+                    <a href="##">储物家具</a> 
+                     
+                    <a href="##">阳台/户外</a> 
+                     
+                    <a href="##">沙发</a> 
+                     
+                    <a href="##">鞋架/衣帽架</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">厨具<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">烹饪锅具</a> 
+                     
+                    <a href="##">刀剪菜板</a> 
+                     
+                    <a href="##">厨房配件</a> 
+                     
+                    <a href="##">水具酒具</a> 
+                     
+                    <a href="##">餐具</a> 
+                     
+                    <a href="##">茶具/咖啡具</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">灯具<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">台灯</a> 
+                     
+                    <a href="##">吸顶灯</a> 
+                     
+                    <a href="##">筒灯射灯</a> 
+                     
+                    <a href="##">LED灯</a> 
+                     
+                    <a href="##">落地灯</a> 
+                     
+                    <a href="##">应急灯/手电</a> 
+                     
+                    <a href="##">装饰灯</a> 
+                     
+                    <a href="##">吊灯</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">家装软饰<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">桌布/罩件</a> 
+                     
+                    <a href="##">地毯地垫</a> 
+                     
+                    <a href="##">沙发垫套/椅垫</a> 
+                     
+                    <a href="##">帘艺隔断</a> 
+                     
+                    <a href="##">相框/照片墙</a> 
+                     
+                    <a href="##">装饰字画</a> 
+                     
+                    <a href="##">墙贴/装饰贴</a> 
+                     
+                    <a href="##">摆件花瓶</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">生活日用<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">收纳用品</a> 
+                     
+                    <a href="##">雨伞雨具</a> 
+                     
+                    <a href="##">浴室用品</a> 
+                     
+                    <a href="##">缝纫/针织用品</a> 
+                     
+                    <a href="##">洗晒/熨烫</a> 
+                     
+                    <a href="##">净化除味</a> 
+                     
+                  </dd>
+                </dl>
+                 
+              </div>
+            </div>
+            <div class="item-right fr">
+              <div class="item-brands">
+                <div class="brands-inner"> 
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437428980225446797.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437432889680565833.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437436852699771679.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437432522356081645.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437431622196514430.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437429301820829673.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437434929995564906.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437434636974815215.jpg" width="90" height="36"> </a>  
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                </div>
+              </div>
+                             
+            </div>
+          </div>
+        </div>
+                <div class="list">
+          <dl class="cat">
+            <dt class="cat-name"> <a href="##">男装、女装、内衣、珠宝</a> </dt>
+            <i>&gt;</i>
+          </dl>
+          <div class="categorys">
+            <div class="item-left fl"> 
+              
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+                            <div class="subitems"> 
+                                <dl class="fore1">
+                  <dt> <a href="##">女装馆<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">连衣裙</a> 
+                     
+                    <a href="##">连体裤</a> 
+                     
+                    <a href="##">棉麻T恤</a> 
+                     
+                    <a href="##">时尚套装</a> 
+                     
+                    <a href="##">复古旗袍</a> 
+                     
+                    <a href="##">牛仔裤</a> 
+                     
+                    <a href="##">短外套</a> 
+                     
+                    <a href="##">防晒衫</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">内衣馆<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">聚拢文胸</a> 
+                     
+                    <a href="##">薄款文胸</a> 
+                     
+                    <a href="##">无钢圈文胸</a> 
+                     
+                    <a href="##">女士内裤</a> 
+                     
+                    <a href="##">男士内裤</a> 
+                     
+                    <a href="##">夏季睡衣</a> 
+                     
+                    <a href="##">性感睡衣</a> 
+                     
+                    <a href="##">瘦腿袜</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">男装馆<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">休闲裤</a> 
+                     
+                    <a href="##">牛仔裤</a> 
+                     
+                    <a href="##">夹克</a> 
+                     
+                    <a href="##">风衣</a> 
+                     
+                    <a href="##">针织衫</a> 
+                     
+                    <a href="##">长袖衬衫</a> 
+                     
+                    <a href="##">休闲短裤</a> 
+                     
+                    <a href="##">POLO衫</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">户外鞋服<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">跑步鞋</a> 
+                     
+                    <a href="##">篮球鞋</a> 
+                     
+                    <a href="##">帆布鞋</a> 
+                     
+                    <a href="##">羽毛球鞋</a> 
+                     
+                    <a href="##">迷彩裤</a> 
+                     
+                    <a href="##">沙滩鞋</a> 
+                     
+                    <a href="##">钓鱼服</a> 
+                     
+                    <a href="##">登山鞋</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">女鞋馆<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">高跟凉拖</a> 
+                     
+                    <a href="##">平底鞋</a> 
+                     
+                    <a href="##">高跟鞋</a> 
+                     
+                    <a href="##">坡跟单鞋</a> 
+                     
+                    <a href="##">浅口单鞋</a> 
+                     
+                    <a href="##">帆布鞋</a> 
+                     
+                    <a href="##">乐福鞋</a> 
+                     
+                    <a href="##">松糕鞋</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">箱包馆<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">单肩女包</a> 
+                     
+                    <a href="##">手提女包</a> 
+                     
+                    <a href="##">女士钱包</a> 
+                     
+                    <a href="##">男士双肩</a> 
+                     
+                    <a href="##">男士钱包</a> 
+                     
+                    <a href="##">旅行箱</a> 
+                     
+                    <a href="##">拉杆箱</a> 
+                     
+                    <a href="##">拉杆包</a> 
+                     
+                  </dd>
+                </dl>
+                 
+              </div>
+            </div>
+            <div class="item-right fr">
+              <div class="item-brands">
+                <div class="brands-inner"> 
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437432530915190983.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437432607921594733.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437432540121764652.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437432618356392882.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437436184083765295.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437436548477690017.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437434684850488373.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437431622196514430.jpg" width="90" height="36"> </a>  
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                </div>
+              </div>
+                             
+            </div>
+          </div>
+        </div>
+                <div class="list">
+          <dl class="cat">
+            <dt class="cat-name"> <a href="##">个护化妆、清洁用品</a> </dt>
+            <i>&gt;</i>
+          </dl>
+          <div class="categorys">
+            <div class="item-left fl"> 
+              
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+                            <div class="subitems"> 
+                                <dl class="fore1">
+                  <dt> <a href="##">香水彩妆<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">香水</a> 
+                     
+                    <a href="##">底妆</a> 
+                     
+                    <a href="##">腮红</a> 
+                     
+                    <a href="##">眼部</a> 
+                     
+                    <a href="##">唇部</a> 
+                     
+                    <a href="##">美甲</a> 
+                     
+                    <a href="##">美容工具</a> 
+                     
+                    <a href="##">套装</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">面部护肤<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">清洁</a> 
+                     
+                    <a href="##">护肤</a> 
+                     
+                    <a href="##">面膜</a> 
+                     
+                    <a href="##">剃须</a> 
+                     
+                    <a href="##">套装</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">洗发护发<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">洗发</a> 
+                     
+                    <a href="##">护发</a> 
+                     
+                    <a href="##">染发</a> 
+                     
+                    <a href="##">造型</a> 
+                     
+                    <a href="##">假发</a> 
+                     
+                    <a href="##">套装</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">身体护肤<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">沐浴</a> 
+                     
+                    <a href="##">润肤</a> 
+                     
+                    <a href="##">颈部</a> 
+                     
+                    <a href="##">手足</a> 
+                     
+                    <a href="##">纤体塑形</a> 
+                     
+                    <a href="##"> 美胸</a> 
+                     
+                    <a href="##">套装</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">口腔护理<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">牙膏/牙粉</a> 
+                     
+                    <a href="##">牙刷/牙线</a> 
+                     
+                    <a href="##">漱口水</a> 
+                     
+                    <a href="##">套装</a> 
+                     
+                  </dd>
+                </dl>
+                 
+              </div>
+            </div>
+            <div class="item-right fr">
+              <div class="item-brands">
+                <div class="brands-inner"> 
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437428736611050860.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437428885582505638.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437429603999601355.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437428934219489398.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437429934755120717.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437429723052152963.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437430106997787476.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437428980225446797.jpg" width="90" height="36"> </a>  
+                   
+                   
+                   
+                   
+                   
+                </div>
+              </div>
+                             
+            </div>
+          </div>
+        </div>
+                <div class="list">
+          <dl class="cat">
+            <dt class="cat-name"> <a href="##">酒类饮料</a> </dt>
+            <i>&gt;</i>
+          </dl>
+          <div class="categorys">
+            <div class="item-left fl"> 
+              
+               
+               
+               
+               
+               
+               
+               
+               
+                            <div class="subitems"> 
+                                <dl class="fore1">
+                  <dt> <a href="##">酒水<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">白酒</a> 
+                     
+                    <a href="##">啤酒</a> 
+                     
+                    <a href="##">葡萄酒/果酒</a> 
+                     
+                    <a href="##">黄酒/米酒</a> 
+                     
+                    <a href="##">养生酒</a> 
+                     
+                    <a href="##">预调酒</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">冲调饮品<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">蜂蜜</a> 
+                     
+                    <a href="##">成人奶粉</a> 
+                     
+                    <a href="##">豆浆/豆奶粉</a> 
+                     
+                    <a href="##">茶叶</a> 
+                     
+                    <a href="##">奶茶</a> 
+                     
+                    <a href="##">麦片谷物</a> 
+                     
+                    <a href="##">咖啡</a> 
+                     
+                    <a href="##">果味冲调</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">饮料饮品<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">果蔬汁</a> 
+                     
+                    <a href="##">茶饮料</a> 
+                     
+                    <a href="##">碳酸饮料</a> 
+                     
+                    <a href="##">功能饮料</a> 
+                     
+                    <a href="##">纯牛奶</a> 
+                     
+                    <a href="##">酸奶</a> 
+                     
+                    <a href="##">风味奶</a> 
+                     
+                    <a href="##">植物蛋白饮料</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">茗茶<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">铁观音</a> 
+                     
+                    <a href="##">普洱</a> 
+                     
+                    <a href="##">龙井</a> 
+                     
+                    <a href="##">绿茶</a> 
+                     
+                    <a href="##">红茶</a> 
+                     
+                    <a href="##">花果茶</a> 
+                     
+                    <a href="##">养生茶</a> 
+                     
+                    <a href="##">其他茶</a> 
+                     
+                  </dd>
+                </dl>
+                 
+              </div>
+            </div>
+            <div class="item-right fr">
+              <div class="item-brands">
+                <div class="brands-inner"> 
+                   
+                </div>
+              </div>
+                             
+            </div>
+          </div>
+        </div>
+                <div class="list">
+          <dl class="cat">
+            <dt class="cat-name"> <a href="##">鞋靴、箱包、钟表、奢侈品</a> </dt>
+            <i>&gt;</i>
+          </dl>
+          <div class="categorys">
+            <div class="item-left fl"> 
+              
+                            <div class="subitems"> 
+                 
+              </div>
+            </div>
+            <div class="item-right fr">
+              <div class="item-brands">
+                <div class="brands-inner"> 
+                   
+                </div>
+              </div>
+                             
+            </div>
+          </div>
+        </div>
+                <div class="list">
+          <dl class="cat">
+            <dt class="cat-name"> <a href="##">运动户外</a> </dt>
+            <i>&gt;</i>
+          </dl>
+          <div class="categorys">
+            <div class="item-left fl"> 
+              
+                            <div class="subitems"> 
+                 
+              </div>
+            </div>
+            <div class="item-right fr">
+              <div class="item-brands">
+                <div class="brands-inner"> 
+                   
+                </div>
+              </div>
+                             
+            </div>
+          </div>
+        </div>
+                <div class="list">
+          <dl class="cat">
+            <dt class="cat-name"> <a href="##">汽车、汽车用品</a> </dt>
+            <i>&gt;</i>
+          </dl>
+          <div class="categorys">
+            <div class="item-left fl"> 
+              
+                            <div class="subitems"> 
+                 
+              </div>
+            </div>
+            <div class="item-right fr">
+              <div class="item-brands">
+                <div class="brands-inner"> 
+                   
+                </div>
+              </div>
+                             
+            </div>
+          </div>
+        </div>
+                <div class="list">
+          <dl class="cat">
+            <dt class="cat-name"> <a href="##">母婴、玩具乐器</a> </dt>
+            <i>&gt;</i>
+          </dl>
+          <div class="categorys">
+            <div class="item-left fl"> 
+              
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+                            <div class="subitems"> 
+                                <dl class="fore1">
+                  <dt> <a href="##">孕婴奶粉<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">特配奶粉</a> 
+                     
+                    <a href="##">孕妈奶粉</a> 
+                     
+                    <a href="##">pre段</a> 
+                     
+                    <a href="##">1段</a> 
+                     
+                    <a href="##">2段</a> 
+                     
+                    <a href="##">3段</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">营养/辅食<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">米粉</a> 
+                     
+                    <a href="##">果汁/泥</a> 
+                     
+                    <a href="##">面食类</a> 
+                     
+                    <a href="##">宝宝零食</a> 
+                     
+                    <a href="##">DHA</a> 
+                     
+                    <a href="##">清火开胃</a> 
+                     
+                    <a href="##">钙铁锌</a> 
+                     
+                    <a href="##">益生菌</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">孕婴洗护<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">洗衣液/皂</a> 
+                     
+                    <a href="##">宝宝沐浴</a> 
+                     
+                    <a href="##">儿童防晒</a> 
+                     
+                    <a href="##">防蚊/驱蚊</a> 
+                     
+                    <a href="##">爽身粉</a> 
+                     
+                    <a href="##">奶瓶清洗</a> 
+                     
+                    <a href="##">孕妇护肤</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">喂养用品<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">奶嘴奶瓶</a> 
+                     
+                    <a href="##">驱蚊用品</a> 
+                     
+                    <a href="##">浴室用品</a> 
+                     
+                    <a href="##">水壶/水杯</a> 
+                     
+                    <a href="##">吸奶器</a> 
+                     
+                    <a href="##">理发器</a> 
+                     
+                    <a href="##">防溢乳垫</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">车床/床品<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">安全座椅</a> 
+                     
+                    <a href="##">手推车</a> 
+                     
+                    <a href="##">婴儿床</a> 
+                     
+                    <a href="##">餐椅</a> 
+                     
+                    <a href="##">三轮车</a> 
+                     
+                    <a href="##">儿童家具</a> 
+                     
+                    <a href="##">睡袋/抱被</a> 
+                     
+                    <a href="##">凉席/蚊帐</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">孕妈专区<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">孕妇裙</a> 
+                     
+                    <a href="##">打底裤</a> 
+                     
+                    <a href="##">防辐射服</a> 
+                     
+                    <a href="##">腰凳</a> 
+                     
+                    <a href="##">妈咪包</a> 
+                     
+                    <a href="##">收腹带</a> 
+                     
+                    <a href="##">哺乳文胸</a> 
+                     
+                    <a href="##">孕妇内裤</a> 
+                     
+                  </dd>
+                </dl>
+                 
+              </div>
+            </div>
+            <div class="item-right fr">
+              <div class="item-brands">
+                <div class="brands-inner"> 
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437438555681581254.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437429559203552370.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437432901296336878.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437434684850488373.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437438450967200189.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437438440162456222.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437429042714176893.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437438523104074504.jpg" width="90" height="36"> </a>  
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                </div>
+              </div>
+                             
+            </div>
+          </div>
+        </div>
+                <div class="list">
+          <dl class="cat">
+            <dt class="cat-name"> <a href="##">食品、酒类、生鲜、特产</a> </dt>
+            <i>&gt;</i>
+          </dl>
+          <div class="categorys">
+            <div class="item-left fl"> 
+              
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+                            <div class="subitems"> 
+                                <dl class="fore1">
+                  <dt> <a href="##">进口水果<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">释迦芭乐</a> 
+                     
+                    <a href="##">樱桃车厘子</a> 
+                     
+                    <a href="##">芒果桃李</a> 
+                     
+                    <a href="##">龙眼荔枝</a> 
+                     
+                    <a href="##">提子葡萄</a> 
+                     
+                    <a href="##">奇异果猕猴桃</a> 
+                     
+                    <a href="##">凤梨蓝莓</a> 
+                     
+                    <a href="##">榴莲山竹</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">糖果巧克力<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">巧克力</a> 
+                     
+                    <a href="##">口香糖</a> 
+                     
+                    <a href="##">棒棒糖</a> 
+                     
+                    <a href="##">软糖</a> 
+                     
+                    <a href="##">奶糖</a> 
+                     
+                    <a href="##">QQ糖</a> 
+                     
+                    <a href="##">果冻</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">牛奶乳品<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">常温奶</a> 
+                     
+                    <a href="##">乳饮料</a> 
+                     
+                    <a href="##">儿童奶</a> 
+                     
+                    <a href="##">酸奶</a> 
+                     
+                    <a href="##">豆奶</a> 
+                     
+                    <a href="##">低脂奶</a> 
+                     
+                    <a href="##">全脂奶</a> 
+                     
+                    <a href="##">成人奶粉</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">坚果炒货<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">核桃</a> 
+                     
+                    <a href="##">夏威夷果</a> 
+                     
+                    <a href="##">碧根果</a> 
+                     
+                    <a href="##">开心果</a> 
+                     
+                    <a href="##">腰果</a> 
+                     
+                    <a href="##">瓜子</a> 
+                     
+                    <a href="##">花生</a> 
+                     
+                    <a href="##">杏仁</a> 
+                     
+                  </dd>
+                </dl>
+                                <dl class="fore1">
+                  <dt> <a href="##">蜜饯果干<i>&gt;</i></a> </dt>
+                  <dd> 
+                     
+                    <a href="##">红枣</a> 
+                     
+                    <a href="##">莓类</a> 
+                     
+                    <a href="##">葡萄干</a> 
+                     
+                    <a href="##">芒果干</a> 
+                     
+                    <a href="##">香蕉干</a> 
+                     
+                    <a href="##">山楂片</a> 
+                     
+                    <a href="##">橄榄</a> 
+                     
+                    <a href="##">其他</a> 
+                     
+                  </dd>
+                </dl>
+                 
+              </div>
+            </div>
+            <div class="item-right fr">
+              <div class="item-brands">
+                <div class="brands-inner"> 
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437437261557386149.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437431062768997274.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437431098320240967.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437431609681889286.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437431645949723761.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437438523104074504.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437432512022024124.jpg" width="90" height="36"> </a>  
+                   
+                   <a href="##"> <img src="${ctx}/statics/images/1437431595688289538.jpg" width="90" height="36"> </a>  
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                </div>
+              </div>
+                             
+            </div>
+          </div>
+        </div>
+                <div class="list">
+          <dl class="cat">
+            <dt class="cat-name"> <a href="##">营养保健</a> </dt>
+            <i>&gt;</i>
+          </dl>
+          <div class="categorys">
+            <div class="item-left fl"> 
+              
+                            <div class="subitems"> 
+                 
+              </div>
+            </div>
+            <div class="item-right fr">
+              <div class="item-brands">
+                <div class="brands-inner"> 
+                   
+                </div>
+              </div>
+                             
+            </div>
+          </div>
+        </div>
+                <div class="list">
+          <dl class="cat">
+            <dt class="cat-name"> <a href="##">图书、音像、电子书</a> </dt>
+            <i>&gt;</i>
+          </dl>
+          <div class="categorys">
+            <div class="item-left fl"> 
+              
+                            <div class="subitems"> 
+                 
+              </div>
+            </div>
+            <div class="item-right fr">
+              <div class="item-brands">
+                <div class="brands-inner"> 
+                   
+                </div>
+              </div>
+                             
+            </div>
+          </div>
+        </div>
+                <div class="list">
+          <dl class="cat">
+            <dt class="cat-name"> <a href="##">彩票、旅行、充值、票务</a> </dt>
+            <i>&gt;</i>
+          </dl>
+          <div class="categorys">
+            <div class="item-left fl"> 
+              
+                            <div class="subitems"> 
+                 
+              </div>
+            </div>
+            <div class="item-right fr">
+              <div class="item-brands">
+                <div class="brands-inner"> 
+                   
+                </div>
+              </div>
+                             
+            </div>
+          </div>
+        </div>
+                <div class="list">
+          <dl class="cat">
+            <dt class="cat-name"> <a href="##">理财、众筹、白条、保险</a> </dt>
+            <i>&gt;</i>
+          </dl>
+          <div class="categorys">
+            <div class="item-left fl"> 
+              
+                            <div class="subitems"> 
+                 
+              </div>
+            </div>
+            <div class="item-right fr">
+              <div class="item-brands">
+                <div class="brands-inner"> 
+                   
+                </div>
+              </div>
+                             
+            </div>
+          </div>
+        </div>
+         
+      </div>
+      </div>
+      <div class="allnav fl" id="nav">
+        <ul>
+          <li><a class="nav" href="##">首页</a></li>
+                    <li><a class="nav " href="##">食品生鲜</a></li>
+                    <li><a class="nav " href="##">店铺街</a></li>
+                    <li><a class="nav " href="##">团购</a></li>
+                    <li><a class="nav " href="##">预售</a></li>
+                    <li><a class="nav " href="##">拍卖</a></li>
+                    <li><a class="nav " href="##">礼包</a></li>
+                    <li><a class="nav " href="##">积分商城</a></li>
+                    <li><a class="nav " href="##">优惠活动</a></li>
+                    <li><a class="nav " href="##">电商资讯</a></li>
+                    <li><a class="nav " href="##">家用电器</a></li>
+                  </ul>
+      </div>
+  </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+function checkSearchForm()
+{
+    if(document.getElementById('keyword').value)
+    {
+	var frm  = document.getElementById('searchForm');
+	var type = parseInt(document.getElementById('searchtype').value);
+	frm.action = type==0 ? 'search.php' : 'stores.php';
+        return true;
+    }
+    else
+    {
+	alert("请输入关键词！");
+        return false;
+    }
+}
+function myValue1()
+{
+	document.getElementById('keyword').value = "请输入商品名称或编号...";
+}
+function myValue2()
+{
+	document.getElementById('keyword').value = "";
+}
+//]]>
+$('.search-type li').click(function() {
+    $(this).addClass('cur').siblings().removeClass('cur');
+    $('#searchtype').val($(this).attr('num'));
+});
+$(function(){
+	//图片放大效果
+    $(".header-right img").bubbleup({scale:100});
+	
+	//头部搜索
+	$('.search-type').hover(function(){
+		$(this).css({"height":"auto","overflow":"visible"});
+	},function(){
+		$(this).css({"height":32,"overflow":"hidden"});
+	});
+	
+});
+function _show_(h, b) {
+	if (!h) {
+		return
+	}
+	if (b && b.source && b.target) {
+		var d = (typeof b.source == "string") ? M.$("#" + b.source) : b.source;
+		var e = (typeof b.target == "string") ? M.$("#" + b.target) : b.target;
+		if (d && e && !e.isDone) {
+			e.innerHTML = d.value;
+			d.parentNode.removeChild(d);
+			if (typeof b.callback == "function") {
+				b.callback()
+			}
+			e.isDone = true
+		}
+	}
+	M.addClass(h, "hover");
+	if (b && b.isLazyLoad && h.isDone) {
+		var g = h.find("img");
+		for (var a = 0, c = g.length; a < c; a++) {
+			var f = g[a].getAttribute("data-src_index_menu");
+			if (f) {
+				g[a].setAttribute("src", f);
+				g[a].removeAttribute("data-src_index_menu")
+			}
+		}
+		h.isDone = true
+	}
+}
+function _hide_(a) {
+	if (!a) {
+		return
+	}
+	if (a.className.indexOf("hover") > -1) {
+		M.removeClass(a, "hover")
+	}
+}
+</script>
+<script type="text/javascript" src="${ctx}/statics/js/nav.js"></script>
+  <div class="blank"></div>
+  <div class="w1210">
+  	<div id="hotsale">
+    <div class="hd">热卖推荐</div>
+    <div class="mc">
+            <dl>
+        <dt><a target="_blank" href="##"><img src="${ctx}/statics/images/271_thumb_G_1456452775873.jpg" width="100" height="100" alt="江口醇 方形蓝色马六甲 52度500ml*2瓶装 高度浓香型国产白酒 纯粮酒水特价包邮"></a></dt>
+        <dd>
+          <div class="p-name"><a target="_blank" href="##">江口醇 方形蓝色马六甲 52度500ml...</a></div>
+          <div class="p-price">特价：<font class="shop-price">
+                        ¥198.0                        </font></div>
+          <div class="btns"><a target="_blank" href="##">查看详情</a></div>
+        </dd>
+      </dl>
+            <dl>
+        <dt><a target="_blank" href="##"><img src="${ctx}/statics/images/287_thumb_G_1457592139010.jpg" width="100" height="100" alt="韩国原装进口lotte乐天 2%富足水蜜桃果汁饮料240ml听装 夏季饮料"></a></dt>
+        <dd>
+          <div class="p-name"><a target="_blank" href="##">韩国原装进口lotte乐天 2%富足水蜜...</a></div>
+          <div class="p-price">特价：<font class="shop-price">
+                        ¥5.3                        </font></div>
+          <div class="btns"><a target="_blank" href="##">查看详情</a></div>
+        </dd>
+      </dl>
+            <dl>
+        <dt><a target="_blank" href="##"><img src="${ctx}/statics/images/272_thumb_G_1456452879681.jpg" width="100" height="100" alt="江鼎 白酒衡水老白干大青花50度高度白酒500ML"></a></dt>
+        <dd>
+          <div class="p-name"><a target="_blank" href="##">江鼎 白酒衡水老白干大青花50度高度白酒...</a></div>
+          <div class="p-price">特价：<font class="shop-price">
+                        ¥118.0                        </font></div>
+          <div class="btns"><a target="_blank" href="##">查看详情</a></div>
+        </dd>
+      </dl>
+            <dl>
+        <dt><a target="_blank" href="##"><img src="${ctx}/statics/images/273_thumb_G_1456452987184.jpg" width="100" height="100" alt="康师傅优悦水550ml*24瓶（整箱）"></a></dt>
+        <dd>
+          <div class="p-name"><a target="_blank" href="##">康师傅优悦水550ml*24瓶（整箱）</a></div>
+          <div class="p-price">特价：<font class="shop-price">
+                        ¥19.9                        </font></div>
+          <div class="btns"><a target="_blank" href="##">查看详情</a></div>
+        </dd>
+      </dl>
+          </div>
+</div>
+	<div class="w">
+  <div class="breadcrumb clearfix"><a href="##">首页</a> <span class="crumbs-arrow">&gt;</span> <div class="crumbs-nav crumbs-nav0"><a class="crumbs-title" href="##">酒类饮料<i class="icon"></i></a><div class="crumbs-drop"><ul class="crumbs-drop-list"><li><a href="##">食品、酒类、生鲜、特产</a></li><li><a href="##">男装、女装、内衣、珠宝</a></li><li><a href="##">个护化妆、清洁用品</a></li><li><a href="##">手机、数码、通信</a></li><li><a href="##">家用电器</a></li><li><a href="##">家居、家具、家装、厨具</a></li><li><a href="##">酒类饮料</a></li><li><a href="##">母婴、玩具乐器</a></li><li><a href="##">虚拟商品</a></li><li><a href="##">电脑、办公</a></li><li><a href="##">鞋靴、箱包、钟表、奢侈品</a></li><li><a href="##">运动户外</a></li><li><a href="##">汽车、汽车用品</a></li><li><a href="##">营养保健</a></li><li><a href="##">图书、音像、电子书</a></li><li><a href="##">彩票、旅行、充值、票务</a></li><li><a href="##">理财、众筹、白条、保险</a></li></ul></div></div></div>
+</div>
+<div class="blank"></div>
+<script>
+$(function(){
+	$('.breadcrumb .crumbs-nav').hover(function(){
+		$(this).toggleClass('curr');	
+	})
+})
+</script>
+     
+     
+    <script type="text/javascript">
+	var begin_hidden=0;
+	function init_position_left(){
+		var kuan1=document.getElementById('attr-list-ul').clientWidth;
+		var kuan2=document.getElementById('attr-group-more').clientWidth;
+		var kuan =(kuan1-kuan2)/2;
+		document.getElementById('attr-group-more').style.marginLeft=kuan+"px";
+	}
+	function getElementsByName(tagName, eName){  
+		var tags = document.getElementsByTagName(tagName);  
+		var returns = new Array();  
+      	if (tags != null && tags.length > 0) {  
+			for (var i = 0; i < tags.length; i++) {  
+				if (tags[i].getAttribute("name") == eName) {  
+					returns[returns.length] = tags[i];  
+				}  
+			}  
+		}  
+		return returns;  
+	}
+	function Show_More_Attrgroup(){
+		var attr_list_dl = getElementsByName('dl','attr-group-dl');
+		var attr_group_more_text = document.getElementById('attr-group-more-text');
+		if(begin_hidden==2){
+			for(var i=0;i<attr_list_dl.length;i++){
+				attr_list_dl[i].style.display= i >= begin_hidden ? 'none' : 'block';
+			}
+			attr_group_more_text.innerHTML="更多选项（" + attr_group_more_txt + "）";
+			init_position_left();
+			begin_hidden=0;
+		}else{
+			for(var i=0;i<attr_list_dl.length;i++){
+				attr_list_dl[i].style.display='block';				
+			}
+			attr_group_more_text.innerHTML="收起";
+			init_position_left();
+			begin_hidden=2;
+		}
+	}
+	// 是否显示“更多”__初始化
+	function init_more(boxid, moreid, height){
+	     var obj_brand=document.getElementById(boxid);
+	     var more_brand = document.getElementById(moreid);
+	     if (obj_brand.clientHeight > height){
+			obj_brand.style.height= height+ "px";
+			obj_brand.style.overflow="hidden";
+			more_brand.innerHTML='<a href="##">更多</a>';
+	     }
+	 }
+	 function slideDiv(thisobj, divID,Height){  
+	     var obj=document.getElementById(divID).style;  
+	     if(obj.height==""){  
+         	obj.height= Height+ "px";  
+         	obj.overflow="hidden";
+	     	thisobj.innerHTML="更多";
+	     	thisobj.className="more-wrzc-1";
+	        // 如果是品牌，额外处理
+			if(divID=='brand-abox'){
+			   //obj.width="456px";
+			   getBrand_By_Zimu(document.getElementById('brand-zimu-all'),'');
+			   document.getElementById('brand-sobox').style.display = "none";
+			   document.getElementById('brand-zimu').style.display = "none";
+			   document.getElementById('brand-abox-father').className="";
+			}
+         }else{  
+         	obj.height="";  
+         	obj.overflow="";  
+	     	thisobj.innerHTML="收起";
+	     	thisobj.className="more-wrzc-2";
+	        // 如果是品牌，额外处理
+			if(divID=='brand-abox'){
+			   //obj.width="456px";
+				   document.getElementById('brand-sobox').style.display = "block";
+			   document.getElementById('brand-zimu').style.display = "block";
+			   //getBrand_By_Zimu(document.getElementById('brand-zimu-all'),'');
+			   document.getElementById('brand-abox-father').className="brand-more-wygk";
+			 }
+	     }  
+	}
+	function getBrand_By_Name(val){
+	    val =val.toLocaleLowerCase();
+	    var brand_list = document.getElementById('brand-abox').getElementsByTagName('li');    
+	    for(var i=0;i<brand_list.length;i++){
+			//document.getElementById('brand-abox').style.width="auto";
+			var name_attr_value= brand_list[i].getAttribute("name").toLocaleLowerCase();
+			if(brand_list[i].title.indexOf(val)==0 || name_attr_value.indexOf(val)==0 || val==''){
+				brand_list[i].style.display='block';
+			}else{
+				brand_list[i].style.display='none';
+			}
+	    }
+	}
+	//点击字母切换品牌
+	function getBrand_By_Zimu(obj, zimu)
+	{
+		document.getElementById('brand-sobox-input').value="可搜索拼音、汉字查找品牌";
+		obj.focus();
+		var brand_zimu=document.getElementById('brand-zimu');
+		var zimu_span_list = brand_zimu.getElementsByTagName('span');
+		for(var i=0;i<zimu_span_list.length;i++){
+			zimu_span_list[i].className='';
+		}
+		var thisspan=obj.parentNode;
+		thisspan.className='span';
+		var brand_list = document.getElementById('brand-abox').getElementsByTagName('li');			
+		for(var i=0;i<brand_list.length;i++){	
+			//document.getElementById('brand-abox').style.width="auto";
+			if(brand_list[i].getAttribute('rel') == zimu || zimu==''){
+				brand_list[i].style.display='block';
+			}else{
+				brand_list[i].style.display='none';
+			}
+		}
+	}
+	var duoxuan_a_valid=new Array();
+	// 点击多选， 显示多选区
+	function showDuoXuan(dx_divid, a_valid_id){	     
+	     var dx_dl_wrzc = document.getElementById('attr-list-ul').getElementsByTagName('dl');
+	     for(var i=0;i<dx_dl_wrzc.length;i++){
+			dx_dl_wrzc[i].className='';
+			dx_dl_wrzc[0].className='selected-attr-dl';
+	     }
+	     var dxDiv=document.getElementById(dx_divid);
+	     dxDiv.className ="duoxuan";
+	     duoxuan_a_valid[a_valid_id]=1;
+	     
+	}
+	function hiddenDuoXuan(dx_divid, a_valid_id){
+		var dxDiv=document.getElementById(dx_divid);
+		dxDiv.className ="";
+		duoxuan_a_valid[a_valid_id]=0;
+		if(a_valid_id=='brand'){
+			var ul_obj_wrzc = document.getElementById('brand-abox');
+			var li_list_wrzc = ul_obj_wrzc.getElementsByTagName('li');
+			if(li_list_wrzc){
+				for(var j=0;j<li_list_wrzc.length;j++){
+					li_list_wrzc[j].className="";
+				}
+			}
+		}else{
+			var ul_obj_wrzc = document.getElementById('attr-abox-'+a_valid_id);
+		}
+		var input_list = ul_obj_wrzc.getElementsByTagName('input');
+		var span_list = ul_obj_wrzc.getElementsByTagName('span');
+		for(var j=0;j<input_list.length;j++){
+			input_list[j].checked=false;
+		}
+		if(span_list.length){
+			for(var j=0;j<span_list.length;j++){
+				span_list[j].className="color-wygk";
+			}
+		}
+	}
+	function duoxuan_Onclick(a_valid_id, idid, thisobj)
+	{			
+		if (duoxuan_a_valid[a_valid_id]){
+			if (thisobj){	
+				var fatherObj = thisobj.parentNode;
+				if (a_valid_id =="brand"){
+					fatherObj.className = fatherObj.className == "brand-seled" ? "" : "brand-seled";
+					}else{
+					fatherObj.className =   fatherObj.className == "color-wygk" ? "color-wygk-seled" : "color-wygk";
+				}
+			}
+			document.getElementById('chk-'+a_valid_id+'-'+idid).checked= !document.getElementById('chk-'+a_valid_id+'-'+idid).checked;
+			return false;
+		}
+	}
+	
+	function duoxuan_Submit(dxid, indexid, attr_count, category, brand_id, price_min, price_max,  filter_attr,filter)
+	{		
+		var theForm =document.forms['theForm'];
+		var chklist=theForm.elements['checkbox_'+ dxid+'[]'];
+		var newpara="";
+		var mm=0;
+		for(var k=0;k<chklist.length;k++){
+			if(chklist[k].checked){
+				//alert(chklist[k].value);
+				newpara += mm>0 ? "_" : "";
+				newpara += chklist[k].value;
+				mm++;
+			}
+		}
+		if (mm==0){
+			return false;
+		}
+		if(dxid=='brand'){
+			brand_id = newpara;
+		}else{
+			var attr_array = new Array();
+			filter_attr = filter_attr.replace(/\./g,",");
+			attr_array=filter_attr.split(',');
+			for(var h=0;h<attr_count;h++){
+				if(indexid == h){
+					attr_array[indexid] = newpara;
+				}else{
+					if(attr_array[h]){
+					}else{
+					 attr_array[h] = 0;
+					}
+				}
+			}
+			filter_attr = attr_array.toString();
+		}
+		filter_attr = filter_attr.replace(/,/g,".");
+		var url="other.php";
+		//var url="category.php";
+		url += "?id="+ category;
+		url += brand_id ? "&brand="+brand_id : "";
+		url += price_min ? "&price_min="+price_min : "&price_min=0";
+		url += price_max ? "&price_max="+price_max : "&price_max=0";
+		url += filter_attr ? "&filter_attr="+filter_attr : "&filter_attr=0";
+		url += filter ? "&filter="+filter : "&filter=0";
+		//location.href=url;
+		return_url(url,dxid);
+	}
+	function return_url(url,dxid){
+	  $.ajax({    
+		    url:url,   
+		    type:'get',
+		    cache:false,
+		    dataType:'text',
+		    success:function(data){
+		        var obj = document.getElementById('button-'+dxid);
+		        obj.href = data;
+			obj.click();
+			//location.href=data;
+		     }
+		});
+	}
+	
+	</script> 
+        <form action="##" method="post" name="theForm">
+      <div class="box-attr-wygk" id="attr-list-ul"> 
+         
+        
+         
+        
+                <dl>
+          <dt>价格：</dt>
+          <dd class="moredd">&nbsp;</dd>
+          <dd>
+            <ul>
+               
+               
+               
+                            <li><a href="##">0&nbsp;-&nbsp;60</a></li>
+               
+               
+                            <li><a href="##">60&nbsp;-&nbsp;120</a></li>
+               
+               
+                            <li><a href="##">120&nbsp;-&nbsp;180</a></li>
+               
+               
+                            <li><a href="##">180&nbsp;-&nbsp;240</a></li>
+               
+               
+                            <li><a href="##">240&nbsp;-&nbsp;300</a></li>
+               
+                            <li> 
+                
+                
+                <input type="text" name="price_min" id="price_min" value="0" class="price-wrzc" onkeyup="this.value=this.value.replace(/\D/g,&#39;&#39;)" onafterpaste="this.value=this.value.replace(/\D/g,&#39;&#39;)" autocomplete="off">
+                <i></i>
+                <input type="text" name="price_max" id="price_max" value="0" class="price-wrzc" onkeyup="this.value=this.value.replace(/\D/g,&#39;&#39;)" onafterpaste="this.value=this.value.replace(/\D/g,&#39;&#39;)" autocomplete="off">
+                
+                 
+                <a class="select-button" href="##">确定</a> </li>
+            </ul>
+          </dd>
+        </dl>
+         
+        
+         
+      </div>
+       
+      <script type="text/javascript">init_position_left(); </script>
+    </form>
+    <script type="text/javascript">
+      $(function(){
+		 $('.color-wygk-li span').click(function(){
+			var seled_num = $(this).parents('ul').find('.color-wygk-seled').length;
+			if(seled_num > 0){
+				$(this).parents('dd').find('.select-button').eq(0).attr('class','select-button select-button-sumbit');	
+			}else if(seled_num == 0){
+				$(this).parents('dd').find('.select-button').eq(0).attr('class','select-button disabled');	
+			}
+		 })
+		 $('.other-wygk-li input[type="checkbox"]').bind('click',function(){
+			 var seled_input_num = $(this).parents('ul').find('input[type="checkbox"]:checked').length;
+			 if(seled_input_num>0){
+				 $(this).parents('dd').find('.select-button').eq(0).attr('class','select-button select-button-sumbit');	
+			 }else if(seled_input_num == 0){
+				 $(this).parents('dd').find('.select-button').eq(0).attr('class','select-button disabled');
+			 }
+		 })  
+	  })
+      </script> 
+         
+     
+    
+    <div class="blank15"></div>
+    <div class="content-wrap category-wrap clearfix">
+        <div class="aside">
+        	<span class="slide-aside"></span>
+            <div class="aside-inner">
+                                <div class="aside-con">
+                    <h2 class="aside-tit">新品推荐</h2>
+                    <ul class="aside-list">
+                         
+                                                <li>
+                            <div class="p-img">
+                                <a target="_blank" title="江口醇 方形蓝色马六甲 52度500ml*2瓶装 高度浓香型国产白酒 纯粮酒水特价包邮" href="##"><img alt="江口醇 方形蓝色马六甲 52度500ml*2瓶装 高度浓香型国产白酒 纯粮酒水特价包邮" data-original="images/201602/thumb_img/271_thumb_G_1456452775873.jpg" src="${ctx}/statics/js/271_thumb_G_1456452775873.jpg" style="display: inline;"></a> 
+                            </div>
+                            <div class="p-name">
+                                <a target="_blank" title="江口醇 方形蓝色马六甲 52度500ml*2瓶装 高度浓香型国产白酒 纯粮酒水特价包邮" href="##">江口醇 方形蓝色马六甲 52度500ml*2瓶装 高度浓香型国产白酒 纯粮酒水特价包邮</a>
+                            </div>
+                            <div class="p-price">
+                                <span class="sale-price main-color">¥198.0</span>
+                                <span class="market-price"><del>¥237.0</del></span>
+                            </div>
+                        </li>
+                                                 
+                                                <li>
+                            <div class="p-img">
+                                <a target="_blank" title="五粮液 45度小酒版 水晶礼盒装 浓香型白酒 官方授权 酒厂直供 中国名酒 250ML" href="##"><img alt="五粮液 45度小酒版 水晶礼盒装 浓香型白酒 官方授权 酒厂直供 中国名酒 250ML" data-original="images/201602/thumb_img/270_thumb_G_1456452662995.jpg" src="${ctx}/statics/js/270_thumb_G_1456452662995.jpg" style="display: inline;"></a> 
+                            </div>
+                            <div class="p-name">
+                                <a target="_blank" title="五粮液 45度小酒版 水晶礼盒装 浓香型白酒 官方授权 酒厂直供 中国名酒 250ML" href="##">五粮液 45度小酒版 水晶礼盒装 浓香型白酒 官方授权 酒厂直供 中国名酒 250ML</a>
+                            </div>
+                            <div class="p-price">
+                                <span class="sale-price main-color">¥200.0</span>
+                                <span class="market-price"><del>¥333.0</del></span>
+                            </div>
+                        </li>
+                                                 
+                                                <li>
+                            <div class="p-img">
+                                <a target="_blank" title="韩国原装进口lotte乐天 2%富足水蜜桃果汁饮料240ml听装 夏季饮料" href="##"><img alt="韩国原装进口lotte乐天 2%富足水蜜桃果汁饮料240ml听装 夏季饮料" data-original="images/201603/thumb_img/287_thumb_G_1457592139010.jpg" src="${ctx}/statics/js/287_thumb_G_1457592139010.jpg" style="display: inline;"></a> 
+                            </div>
+                            <div class="p-name">
+                                <a target="_blank" title="韩国原装进口lotte乐天 2%富足水蜜桃果汁饮料240ml听装 夏季饮料" href="##">韩国原装进口lotte乐天 2%富足水蜜桃果汁饮料240ml听装 夏季饮料</a>
+                            </div>
+                            <div class="p-price">
+                                <span class="sale-price main-color">¥5.3</span>
+                                <span class="market-price"><del>¥6.0</del></span>
+                            </div>
+                        </li>
+                                                 
+                                                <li>
+                            <div class="p-img">
+                                <a target="_blank" title="江鼎 白酒衡水老白干大青花50度高度白酒500ML" href="##"><img alt="江鼎 白酒衡水老白干大青花50度高度白酒500ML" data-original="images/201602/thumb_img/272_thumb_G_1456452879681.jpg" src="${ctx}/statics/js/272_thumb_G_1456452879681.jpg" style="display: inline;"></a> 
+                            </div>
+                            <div class="p-name">
+                                <a target="_blank" title="江鼎 白酒衡水老白干大青花50度高度白酒500ML" href="##">江鼎 白酒衡水老白干大青花50度高度白酒500ML</a>
+                            </div>
+                            <div class="p-price">
+                                <span class="sale-price main-color">¥118.0</span>
+                                <span class="market-price"><del>¥141.0</del></span>
+                            </div>
+                        </li>
+                                                 
+                                                <li>
+                            <div class="p-img">
+                                <a target="_blank" title="康师傅优悦水550ml*24瓶（整箱）" href="##"><img alt="康师傅优悦水550ml*24瓶（整箱）" data-original="images/201602/thumb_img/273_thumb_G_1456452987184.jpg" src="${ctx}/statics/js/273_thumb_G_1456452987184.jpg" style="display: inline;"></a> 
+                            </div>
+                            <div class="p-name">
+                                <a target="_blank" title="康师傅优悦水550ml*24瓶（整箱）" href="##">康师傅优悦水550ml*24瓶（整箱）</a>
+                            </div>
+                            <div class="p-price">
+                                <span class="sale-price main-color">¥19.9</span>
+                                <span class="market-price"><del>¥23.0</del></span>
+                            </div>
+                        </li>
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                                    </ul>
+                </div>
+                 
+                
+<div class="aside-con">
+	<h2 class="aside-tit">销量排行榜</h2>
+    <ul class="aside-list">
+				<li>
+        	<div class="p-img">
+            	<a target="_blank" title="" href="##"><img alt="苹果（Apple）iPhone 6 (A1586) 16GB 金色 移动联通电信4G手机" data-original="images/201507/thumb_img/100_thumb_G_1437523484060.jpg" src="${ctx}/statics/js/100_thumb_G_1437523484060.jpg" style="display: inline;"></a> 
+            </div>
+            <div class="p-name">
+                <a target="_blank" title="" href="##">苹果（Apple）iPhone 6 (A1586) 16GB 金色 移动联通电信4G手机</a>
+            </div>
+            <div class="p-price">
+                <span class="sale-price main-color">¥4888.0</span>
+                <span class="sale-num">销量: 9</span>
+            </div>
+      </li>
+      		<li>
+        	<div class="p-img">
+            	<a target="_blank" title="" href="##"><img alt="高端2015夏装新款修身淑坊女女装蕾丝短袖复女连衣裙装" data-original="images/201507/thumb_img/51_thumb_G_1437519866381.jpg" src="${ctx}/statics/js/51_thumb_G_1437519866381.jpg" style="display: inline;"></a> 
+            </div>
+            <div class="p-name">
+                <a target="_blank" title="" href="##">高端2015夏装新款修身淑坊女女装蕾丝短袖复女连衣裙装</a>
+            </div>
+            <div class="p-price">
+                <span class="sale-price main-color">¥199.0</span>
+                <span class="sale-num">销量: 9</span>
+            </div>
+      </li>
+      		<li>
+        	<div class="p-img">
+            	<a target="_blank" title="" href="##"><img alt="爱度AY800蓝牙音箱手机电脑迷你音响无线便携插卡低音炮 带蓝牙自拍 土豪金" data-original="images/201507/thumb_img/200_thumb_G_1437534571298.jpg" src="${ctx}/statics/js/200_thumb_G_1437534571298.jpg" style="display: inline;"></a> 
+            </div>
+            <div class="p-name">
+                <a target="_blank" title="" href="##">爱度AY800蓝牙音箱手机电脑迷你音响无线便携插卡低音炮 带蓝牙自拍 土豪金</a>
+            </div>
+            <div class="p-price">
+                <span class="sale-price main-color">¥98.0</span>
+                <span class="sale-num">销量: 13</span>
+            </div>
+      </li>
+      		<li>
+        	<div class="p-img">
+            	<a target="_blank" title="" href="##"><img alt="家用静音办公室空调加湿器 香薰迷你大容量净化特价" data-original="images/201507/thumb_img/88_thumb_G_1437522788663.jpg" src="${ctx}/statics/js/88_thumb_G_1437522788663.jpg" style="display: inline;"></a> 
+            </div>
+            <div class="p-name">
+                <a target="_blank" title="" href="##">家用静音办公室空调加湿器 香薰迷你大容量净化特价</a>
+            </div>
+            <div class="p-price">
+                <span class="sale-price main-color">¥100.0</span>
+                <span class="sale-num">销量: 5</span>
+            </div>
+      </li>
+      		<li>
+        	<div class="p-img">
+            	<a target="_blank" title="" href="##"><img alt="包邮 新款户外军迷阿帕奇T恤 纯棉男款短袖半袖特价宽松" data-original="images/201507/thumb_img/_thumb_P_1438047501681.jpg" src="${ctx}/statics/js/_thumb_P_1438047501681.jpg" style="display: inline;"></a> 
+            </div>
+            <div class="p-name">
+                <a target="_blank" title="" href="##">包邮 新款户外军迷阿帕奇T恤 纯棉男款短袖半袖特价宽松</a>
+            </div>
+            <div class="p-price">
+                <span class="sale-price main-color">¥274.0</span>
+                <span class="sale-num">销量: 10</span>
+            </div>
+      </li>
+      		<li>
+        	<div class="p-img">
+            	<a target="_blank" title="" href="##"><img alt="二级大2P智能云定频冷暖柜机空调" data-original="images/201507/thumb_img/122_thumb_G_1437525597541.jpg" src="${ctx}/statics/js/122_thumb_G_1437525597541.jpg" style="display: inline;"></a> 
+            </div>
+            <div class="p-name">
+                <a target="_blank" title="" href="##">二级大2P智能云定频冷暖柜机空调</a>
+            </div>
+            <div class="p-price">
+                <span class="sale-price main-color">¥2245.0</span>
+                <span class="sale-num">销量: 4</span>
+            </div>
+      </li>
+      		<li>
+        	<div class="p-img">
+            	<a target="_blank" title="" href="##"><img alt="可爱卡通餐盘水果盘点心盘 盘子儿童托盘餐具6件套" data-original="images/201507/thumb_img/231_thumb_G_1437587773545.jpg" src="${ctx}/statics/js/231_thumb_G_1437587773545.jpg" style="display: inline;"></a> 
+            </div>
+            <div class="p-name">
+                <a target="_blank" title="" href="##">可爱卡通餐盘水果盘点心盘 盘子儿童托盘餐具6件套</a>
+            </div>
+            <div class="p-price">
+                <span class="sale-price main-color">¥99.0</span>
+                <span class="sale-num">销量: 10</span>
+            </div>
+      </li>
+      		<li>
+        	<div class="p-img">
+            	<a target="_blank" title="" href="##"><img alt="幻响（i-mu）百变羊 创意指环扣 手机支架 双指环 360度旋转 防止手机滑落 金属材质 强力粘胶" data-original="images/201507/thumb_img/183_thumb_G_1437532716802.jpg" src="${ctx}/statics/js/183_thumb_G_1437532716802.jpg" style="display: inline;"></a> 
+            </div>
+            <div class="p-name">
+                <a target="_blank" title="" href="##">幻响（i-mu）百变羊 创意指环扣 手机支架 双指环 360度旋转 防止手机滑落 金属材质 强力粘胶</a>
+            </div>
+            <div class="p-price">
+                <span class="sale-price main-color">¥19.9</span>
+                <span class="sale-num">销量: 1</span>
+            </div>
+      </li>
+      	</ul>
+</div>
+ 
+            </div>
+        </div>
+    	<div class="main">
+        	<div id="filter" class="" style="">
+  <form method="GET" name="listform" action="##">
+    <div class="fore1">
+      <dl class="order">
+        <dd class="first "><a href="##">上架<b class="icon-order-DESCending"></b></a></dd>
+        <dd class=""><a href="##">销量<b class="icon-order-DESCending"></b></a></dd>
+        <dd class=""><a href="##">价格<b class="icon-order-DESCending"></b></a></dd>
+        <dd class="curr"><a href="##">更新<b class="icon-order-ASCending"></b></a></dd>
+        <dd class=""><a href="##">人气<b class="icon-order-DESCending"></b></a></dd>
+      </dl>
+      <div class="pagin"> 
+         
+        <a class="prev"><span class="icon prev-disabled"></span></a> 
+         
+        <span class="text"><font class="main-color">1</font>/2</span> 
+         
+        <a href="##"><span class="icon next-btn"></span></a> 
+         
+      </div>
+      <div class="total">共<span class="main-color">28</span>个商品</div>
+    </div>
+    <div class="fore2">
+      <div class="filter-btn"> <a class="filter-tag " href="##"><i class="icon"></i><span class="text">仅显示有货</span></a>          
+        <a href="##"> <input class="none" type="radio" name="fff" onclick="top.location.href="##"> <i class="icon"></i> <span class="text">全部</span> </a> 
+         
+        <a href="##"> <input class="none" type="radio" name="fff" onclick="top.location.href="##"> <i class="icon"></i> <span class="text">网站自营</span> </a> 
+         
+        <a href="##"> <input class="none" type="radio" name="fff" onclick="top.location.href="##"> <i class="icon"></i> <span class="text">入驻商店铺</span> </a> 
+         
+      </div>
+      <div class="filter-mod"> <a href="##"><span class="filter-type-icon"></span></a> <a href="##"><span class="filter-type-icon"></span></a> <a href="##"><span class="filter-type-icon"></span></a> </div>
+    </div>
+    <input type="hidden" name="category" value="7">
+    <input type="hidden" name="display" value="grid" id="display">
+    <input type="hidden" name="brand" value="0">
+    <input type="hidden" name="price_min" value="0">
+    <input type="hidden" name="price_max" value="0">
+    <input type="hidden" name="filter_attr" value="0">
+    <input type="hidden" name="page" value="1">
+    <input type="hidden" name="sort" value="last_update">
+    <input type="hidden" name="order" value="ASC">
+  </form>
+</div>
+ 
+<form name="compareForm" action="##" method="post" onsubmit="return compareGoods(this);">
+    <ul class="list-grid clearfix">
+       
+            <li class="item" id="li_250">
+        <div class="item-con"> 
+          <div class="item-tag-box">
+          <div class="item-tag"><span>爆款</span><i></i></div>          </div>
+          <div class="item-pic">
+          	<a href="##">
+            	<img data-original="images/201602/thumb_img/250_thumb_G_1456450428826.jpg" src="${ctx}/statics/js/250_thumb_G_1456450428826.jpg" title="怡宝 纯净水 4.5L*4 箱装" class="pic_img_250" style="display: inline;">
+            </a>
+          </div>
+                    <div class="item-info">
+          	<div class="item-price">
+            	<em class="sale-price main-color" title="本店价：¥29.9">¥29.9</em>
+                <em class="sale-count">已售0件</em>
+            </div>
+            <div class="item-name">
+            	<a href="##">怡宝 纯净水 4.5L*4 箱装</a>
+            </div>
+            <div class="item-operate">
+            	<a class="operate-btn compare-btn" data-goods="250" data-type="0" onclick="Compare.add(250,&#39;怡宝 纯净水 4.5L*4 箱装&#39;,&#39;0&#39;, &#39;images/201602/thumb_img/250_thumb_G_1456450428826.jpg&#39;, &#39;¥29.9&#39;)"><i></i>对比</a>
+            	<a id="collect_250" href="##"><i></i>收藏</a>
+                <a href="##"><i></i>0</a> 
+                                <a href="##"></a>
+                            </div>
+          </div>
+        </div>
+      </li>
+       
+       
+            <li class="item" id="li_253">
+        <div class="item-con"> 
+          <div class="item-tag-box">
+          <div class="item-tag"><span>爆款</span><i></i></div>          </div>
+          <div class="item-pic">
+          	<a href="##">
+            	<img data-original="images/201602/thumb_img/253_thumb_G_1456450820776.jpg" src="${ctx}/statics/js/253_thumb_G_1456450820776.jpg" title="七喜冰爽柠檬汽水330ml*24（整箱）" class="pic_img_253" style="display: inline;">
+            </a>
+          </div>
+                    <div class="item-info">
+          	<div class="item-price">
+            	<em class="sale-price main-color" title="本店价：¥43.7">¥43.7</em>
+                <em class="sale-count">已售0件</em>
+            </div>
+            <div class="item-name">
+            	<a href="##">七喜冰爽柠檬汽水330ml*24（整箱）</a>
+            </div>
+            <div class="item-operate">
+            	<a class="operate-btn compare-btn" data-goods="253" data-type="0" onclick="Compare.add(253,&#39;七喜冰爽柠檬汽水330ml*24（整箱）&#39;,&#39;0&#39;, &#39;images/201602/thumb_img/253_thumb_G_1456450820776.jpg&#39;, &#39;¥43.7&#39;)"><i></i>对比</a>
+            	<a id="collect_253" href="##"><i></i>收藏</a>
+                <a href="##"><i></i>0</a> 
+                                <a href="##"></a>
+                            </div>
+          </div>
+        </div>
+      </li>
+       
+       
+            <li class="item" id="li_252">
+        <div class="item-con"> 
+          <div class="item-tag-box">
+          <div class="item-tag"><span>爆款</span><i></i></div>          </div>
+          <div class="item-pic">
+          	<a href="##">
+            	<img data-original="images/201602/thumb_img/252_thumb_G_1456450660879.jpg" src="${ctx}/statics/js/252_thumb_G_1456450660879.jpg" title="1.25L雪碧+1.25L美汁源果粒橙" class="pic_img_252" style="display: inline;">
+            </a>
+          </div>
+                    <div class="item-info">
+          	<div class="item-price">
+            	<em class="sale-price main-color" title="本店价：¥9.9">¥9.9</em>
+                <em class="sale-count">已售0件</em>
+            </div>
+            <div class="item-name">
+            	<a href="##">1.25L雪碧+1.25L美汁源果粒橙</a>
+            </div>
+            <div class="item-operate">
+            	<a class="operate-btn compare-btn" data-goods="252" data-type="0" onclick="Compare.add(252,&#39;1.25L雪碧+1.25L美汁源果粒橙&#39;,&#39;0&#39;, &#39;images/201602/thumb_img/252_thumb_G_1456450660879.jpg&#39;, &#39;¥9.9&#39;)"><i></i>对比</a>
+            	<a id="collect_252" href="##"><i></i>收藏</a>
+                <a href="##"><i></i>0</a> 
+                                <a href="##"></a>
+                            </div>
+          </div>
+        </div>
+      </li>
+       
+       
+            <li class="item last" id="li_254">
+        <div class="item-con"> 
+          <div class="item-tag-box">
+          <div class="item-tag"><span>爆款</span><i></i></div>          </div>
+          <div class="item-pic">
+          	<a href="##">
+            	<img data-original="images/201602/thumb_img/254_thumb_G_1456451004329.jpg" src="${ctx}/statics/js/254_thumb_G_1456451004329.jpg" title="洋河海之蓝42度480ml" class="pic_img_254" style="display: inline;">
+            </a>
+          </div>
+                    <div class="item-info">
+          	<div class="item-price">
+            	<em class="sale-price main-color" title="本店价：¥129.0">¥129.0</em>
+                <em class="sale-count">已售0件</em>
+            </div>
+            <div class="item-name">
+            	<a href="##">洋河海之蓝42度480ml</a>
+            </div>
+            <div class="item-operate">
+            	<a class="operate-btn compare-btn" data-goods="254" data-type="0" onclick="Compare.add(254,&#39;洋河海之蓝42度480ml&#39;,&#39;0&#39;, &#39;images/201602/thumb_img/254_thumb_G_1456451004329.jpg&#39;, &#39;¥129.0&#39;)"><i></i>对比</a>
+            	<a id="collect_254" href="##"><i></i>收藏</a>
+                <a href="##"><i></i>0</a> 
+                                <a href="##"></a>
+                            </div>
+          </div>
+        </div>
+      </li>
+       
+       
+            <li class="item" id="li_255">
+        <div class="item-con"> 
+          <div class="item-tag-box">
+          <div class="item-tag"><span>爆款</span><i></i></div>          </div>
+          <div class="item-pic">
+          	<a href="##">
+            	<img data-original="images/201602/thumb_img/255_thumb_G_1456451111974.jpg" src="${ctx}/statics/js/255_thumb_G_1456451111974.jpg" title="ROM威士忌鸡尾酒青柠味预调酒275ml" class="pic_img_255" style="display: inline;">
+            </a>
+          </div>
+                    <div class="item-info">
+          	<div class="item-price">
+            	<em class="sale-price main-color" title="本店价：¥12.9">¥12.9</em>
+                <em class="sale-count">已售0件</em>
+            </div>
+            <div class="item-name">
+            	<a href="##">ROM威士忌鸡尾酒青柠味预调酒275ml</a>
+            </div>
+            <div class="item-operate">
+            	<a class="operate-btn compare-btn" data-goods="255" data-type="0" onclick="Compare.add(255,&#39;ROM威士忌鸡尾酒青柠味预调酒275ml&#39;,&#39;0&#39;, &#39;images/201602/thumb_img/255_thumb_G_1456451111974.jpg&#39;, &#39;¥12.9&#39;)"><i></i>对比</a>
+            	<a id="collect_255" href="##"><i></i>收藏</a>
+                <a href="##"><i></i>0</a> 
+                                <a href="##"></a>
+                            </div>
+          </div>
+        </div>
+      </li>
+       
+       
+            <li class="item" id="li_258">
+        <div class="item-con"> 
+          <div class="item-tag-box">
+          <div class="item-tag"><span>爆款</span><i></i></div>          </div>
+          <div class="item-pic">
+          	<a href="##">
+            	<img data-original="images/201602/thumb_img/258_thumb_G_1456451394456.jpg" src="${ctx}/statics/js/258_thumb_G_1456451394456.jpg" title="汇源 100%苹果果汁 1L/盒" class="pic_img_258" style="display: inline;">
+            </a>
+          </div>
+                    <div class="item-info">
+          	<div class="item-price">
+            	<em class="sale-price main-color" title="本店价：¥15.9">¥15.9</em>
+                <em class="sale-count">已售0件</em>
+            </div>
+            <div class="item-name">
+            	<a href="##">汇源 100%苹果果汁 1L/盒</a>
+            </div>
+            <div class="item-operate">
+            	<a class="operate-btn compare-btn" data-goods="258" data-type="0" onclick="Compare.add(258,&#39;汇源 100%苹果果汁 1L/盒&#39;,&#39;0&#39;, &#39;images/201602/thumb_img/258_thumb_G_1456451394456.jpg&#39;, &#39;¥15.9&#39;)"><i></i>对比</a>
+            	<a id="collect_258" href="##"><i></i>收藏</a>
+                <a href="##"><i></i>0</a> 
+                                <a href="##"></a>
+                            </div>
+          </div>
+        </div>
+      </li>
+       
+       
+            <li class="item" id="li_257">
+        <div class="item-con"> 
+          <div class="item-tag-box">
+          <div class="item-tag"><span>爆款</span><i></i></div>          </div>
+          <div class="item-pic">
+          	<a href="##">
+            	<img data-original="images/201602/thumb_img/257_thumb_G_1456451288943.jpg" src="${ctx}/statics/js/257_thumb_G_1456451288943.jpg" title="汇源 乐乐园 100%复合果蔬汁 5+7 125ml*16包" class="pic_img_257" style="display: inline;">
+            </a>
+          </div>
+                    <div class="item-info">
+          	<div class="item-price">
+            	<em class="sale-price main-color" title="本店价：¥29.9">¥29.9</em>
+                <em class="sale-count">已售0件</em>
+            </div>
+            <div class="item-name">
+            	<a href="##">汇源 乐乐园 100%复合果蔬汁 5+7 125ml*16包</a>
+            </div>
+            <div class="item-operate">
+            	<a class="operate-btn compare-btn" data-goods="257" data-type="0" onclick="Compare.add(257,&#39;汇源 乐乐园 100%复合果蔬汁 5+7 125ml*16包&#39;,&#39;0&#39;, &#39;images/201602/thumb_img/257_thumb_G_1456451288943.jpg&#39;, &#39;¥29.9&#39;)"><i></i>对比</a>
+            	<a id="collect_257" href="##"><i></i>收藏</a>
+                <a href="##"><i></i>0</a> 
+                                <a href="##"></a>
+                            </div>
+          </div>
+        </div>
+      </li>
+       
+       
+            <li class="item last" id="li_256">
+        <div class="item-con"> 
+          <div class="item-tag-box">
+          <div class="item-tag"><span>爆款</span><i></i></div>          </div>
+          <div class="item-pic">
+          	<a href="##">
+            	<img data-original="images/201602/thumb_img/256_thumb_G_1456451184573.jpg" src="${ctx}/statics/js/256_thumb_G_1456451184573.jpg" title="女儿红6年陈350ML 整箱6瓶装" class="pic_img_256" style="display: inline;">
+            </a>
+          </div>
+                    <div class="item-info">
+          	<div class="item-price">
+            	<em class="sale-price main-color" title="本店价：¥159.0">¥159.0</em>
+                <em class="sale-count">已售0件</em>
+            </div>
+            <div class="item-name">
+            	<a href="##">女儿红6年陈350ML 整箱6瓶装</a>
+            </div>
+            <div class="item-operate">
+            	<a class="operate-btn compare-btn" data-goods="256" data-type="0" onclick="Compare.add(256,&#39;女儿红6年陈350ML 整箱6瓶装&#39;,&#39;0&#39;, &#39;images/201602/thumb_img/256_thumb_G_1456451184573.jpg&#39;, &#39;¥159.0&#39;)"><i></i>对比</a>
+            	<a id="collect_256" href="##"><i></i>收藏</a>
+                <a href="##"><i></i>0</a> 
+                                <a href="##"></a>
+                            </div>
+          </div>
+        </div>
+      </li>
+       
+       
+            <li class="item" id="li_262">
+        <div class="item-con"> 
+          <div class="item-tag-box">
+          <div class="item-tag"><span>爆款</span><i></i></div>          </div>
+          <div class="item-pic">
+          	<a href="##">
+            	<img data-original="images/201602/thumb_img/262_thumb_G_1456451850522.jpg" src="${ctx}/statics/js/262_thumb_G_1456451850522.jpg" title="雀巢 中老年奶粉 850g雀巢" class="pic_img_262" style="display: inline;">
+            </a>
+          </div>
+                    <div class="item-info">
+          	<div class="item-price">
+            	<em class="sale-price main-color" title="本店价：¥75.0">¥75.0</em>
+                <em class="sale-count">已售0件</em>
+            </div>
+            <div class="item-name">
+            	<a href="##">雀巢 中老年奶粉 850g雀巢</a>
+            </div>
+            <div class="item-operate">
+            	<a class="operate-btn compare-btn" data-goods="262" data-type="0" onclick="Compare.add(262,&#39;雀巢 中老年奶粉 850g雀巢&#39;,&#39;0&#39;, &#39;images/201602/thumb_img/262_thumb_G_1456451850522.jpg&#39;, &#39;¥75.0&#39;)"><i></i>对比</a>
+            	<a id="collect_262" href="##"><i></i>收藏</a>
+                <a href="##"><i></i>0</a> 
+                                <a href="##"></a>
+                            </div>
+          </div>
+        </div>
+      </li>
+       
+       
+            <li class="item" id="li_261">
+        <div class="item-con"> 
+          <div class="item-tag-box">
+          <div class="item-tag"><span>爆款</span><i></i></div>          </div>
+          <div class="item-pic">
+          	<a href="##">
+            	<img data-original="images/201602/thumb_img/261_thumb_G_1456451756248.jpg" src="${ctx}/statics/js/261_thumb_G_1456451756248.jpg" title="维维 维他型豆奶粉 560g" class="pic_img_261" style="display: inline;">
+            </a>
+          </div>
+                    <div class="item-info">
+          	<div class="item-price">
+            	<em class="sale-price main-color" title="本店价：¥15.9">¥15.9</em>
+                <em class="sale-count">已售0件</em>
+            </div>
+            <div class="item-name">
+            	<a href="##">维维 维他型豆奶粉 560g</a>
+            </div>
+            <div class="item-operate">
+            	<a class="operate-btn compare-btn" data-goods="261" data-type="0" onclick="Compare.add(261,&#39;维维 维他型豆奶粉 560g&#39;,&#39;0&#39;, &#39;images/201602/thumb_img/261_thumb_G_1456451756248.jpg&#39;, &#39;¥15.9&#39;)"><i></i>对比</a>
+            	<a id="collect_261" href="##"><i></i>收藏</a>
+                <a href="##"><i></i>0</a> 
+                                <a href="##"></a>
+                            </div>
+          </div>
+        </div>
+      </li>
+       
+       
+            <li class="item" id="li_260">
+        <div class="item-con"> 
+          <div class="item-tag-box">
+          <div class="item-tag"><span>爆款</span><i></i></div>          </div>
+          <div class="item-pic">
+          	<a href="##">
+            	<img data-original="images/201602/thumb_img/260_thumb_G_1456451682591.jpg" src="${ctx}/statics/js/260_thumb_G_1456451682591.jpg" title="伊利 女士高铁高钙奶粉 400g" class="pic_img_260" style="display: inline;">
+            </a>
+          </div>
+                    <div class="item-info">
+          	<div class="item-price">
+            	<em class="sale-price main-color" title="本店价：¥32.8">¥32.8</em>
+                <em class="sale-count">已售0件</em>
+            </div>
+            <div class="item-name">
+            	<a href="##">伊利 女士高铁高钙奶粉 400g</a>
+            </div>
+            <div class="item-operate">
+            	<a class="operate-btn compare-btn" data-goods="260" data-type="0" onclick="Compare.add(260,&#39;伊利 女士高铁高钙奶粉 400g&#39;,&#39;0&#39;, &#39;images/201602/thumb_img/260_thumb_G_1456451682591.jpg&#39;, &#39;¥32.8&#39;)"><i></i>对比</a>
+            	<a id="collect_260" href="##"><i></i>收藏</a>
+                <a href="##"><i></i>0</a> 
+                                <a href="##"></a>
+                            </div>
+          </div>
+        </div>
+      </li>
+       
+       
+            <li class="item last" id="li_259">
+        <div class="item-con"> 
+          <div class="item-tag-box">
+          <div class="item-tag"><span>爆款</span><i></i></div>          </div>
+          <div class="item-pic">
+          	<a href="##">
+            	<img data-original="images/201602/thumb_img/259_thumb_G_1456451555948.jpg" src="${ctx}/statics/js/259_thumb_G_1456451555948.jpg" title="舒达源天然苏打水400ml*24" class="pic_img_259" style="display: inline;">
+            </a>
+          </div>
+                    <div class="item-info">
+          	<div class="item-price">
+            	<em class="sale-price main-color" title="本店价：¥209.0">¥209.0</em>
+                <em class="sale-count">已售0件</em>
+            </div>
+            <div class="item-name">
+            	<a href="##">舒达源天然苏打水400ml*24</a>
+            </div>
+            <div class="item-operate">
+            	<a class="operate-btn compare-btn" data-goods="259" data-type="0" onclick="Compare.add(259,&#39;舒达源天然苏打水400ml*24&#39;,&#39;0&#39;, &#39;images/201602/thumb_img/259_thumb_G_1456451555948.jpg&#39;, &#39;¥209.0&#39;)"><i></i>对比</a>
+            	<a id="collect_259" href="##"><i></i>收藏</a>
+                <a href="##"><i></i>0</a> 
+                                <a href="##"></a>
+                            </div>
+          </div>
+        </div>
+      </li>
+       
+       
+            <li class="item" id="li_263">
+        <div class="item-con"> 
+          <div class="item-tag-box">
+          <div class="item-tag"><span>爆款</span><i></i></div>          </div>
+          <div class="item-pic">
+          	<a href="##">
+            	<img data-original="images/201602/thumb_img/263_thumb_G_1456451965817.jpg" src="${ctx}/statics/js/263_thumb_G_1456451965817.jpg" title="伊利 学生高锌高钙奶粉400g" class="pic_img_263" style="display: inline;">
+            </a>
+          </div>
+                    <div class="item-info">
+          	<div class="item-price">
+            	<em class="sale-price main-color" title="本店价：¥32.0">¥32.0</em>
+                <em class="sale-count">已售0件</em>
+            </div>
+            <div class="item-name">
+            	<a href="##">伊利 学生高锌高钙奶粉400g</a>
+            </div>
+            <div class="item-operate">
+            	<a class="operate-btn compare-btn" data-goods="263" data-type="0" onclick="Compare.add(263,&#39;伊利 学生高锌高钙奶粉400g&#39;,&#39;0&#39;, &#39;images/201602/thumb_img/263_thumb_G_1456451965817.jpg&#39;, &#39;¥32.0&#39;)"><i></i>对比</a>
+            	<a id="collect_263" href="##"><i></i>收藏</a>
+                <a href="##"><i></i>0</a> 
+                                <a href="##"></a>
+                            </div>
+          </div>
+        </div>
+      </li>
+       
+       
+            <li class="item" id="li_264">
+        <div class="item-con"> 
+          <div class="item-tag-box">
+          <div class="item-tag"><span>爆款</span><i></i></div>          </div>
+          <div class="item-pic">
+          	<a href="##">
+            	<img data-original="images/201602/thumb_img/264_thumb_G_1456452043487.jpg" src="${ctx}/statics/js/264_thumb_G_1456452043487.jpg" title="藏原蜜语 高原土蜂蜜野生百花蜜糖500g*2瓶 天然无添加" class="pic_img_264" style="display: inline;">
+            </a>
+          </div>
+                    <div class="item-info">
+          	<div class="item-price">
+            	<em class="sale-price main-color" title="本店价：¥49.0">¥49.0</em>
+                <em class="sale-count">已售0件</em>
+            </div>
+            <div class="item-name">
+            	<a href="##">藏原蜜语 高原土蜂蜜野生百花蜜糖500g*2瓶 天然无添加</a>
+            </div>
+            <div class="item-operate">
+            	<a class="operate-btn compare-btn" data-goods="264" data-type="0" onclick="Compare.add(264,&#39;藏原蜜语 高原土蜂蜜野生百花蜜糖500g*2瓶 天然无添加&#39;,&#39;0&#39;, &#39;images/201602/thumb_img/264_thumb_G_1456452043487.jpg&#39;, &#39;¥49.0&#39;)"><i></i>对比</a>
+            	<a id="collect_264" href="##"><i></i>收藏</a>
+                <a href="##"><i></i>0</a> 
+                                <a href="##"></a>
+                            </div>
+          </div>
+        </div>
+      </li>
+       
+       
+            <li class="item" id="li_265">
+        <div class="item-con"> 
+          <div class="item-tag-box">
+          <div class="item-tag"><span>爆款</span><i></i></div>          </div>
+          <div class="item-pic">
+          	<a href="##">
+            	<img data-original="images/201602/thumb_img/265_thumb_G_1456452231528.jpg" src="${ctx}/statics/js/265_thumb_G_1456452231528.jpg" title="恒寿堂 蜜炼柠檬茶大瓶装850g/瓶" class="pic_img_265" style="display: inline;">
+            </a>
+          </div>
+                    <div class="item-info">
+          	<div class="item-price">
+            	<em class="sale-price main-color" title="本店价：¥32.0">¥32.0</em>
+                <em class="sale-count">已售0件</em>
+            </div>
+            <div class="item-name">
+            	<a href="##">恒寿堂 蜜炼柠檬茶大瓶装850g/瓶</a>
+            </div>
+            <div class="item-operate">
+            	<a class="operate-btn compare-btn" data-goods="265" data-type="0" onclick="Compare.add(265,&#39;恒寿堂 蜜炼柠檬茶大瓶装850g/瓶&#39;,&#39;0&#39;, &#39;images/201602/thumb_img/265_thumb_G_1456452231528.jpg&#39;, &#39;¥32.0&#39;)"><i></i>对比</a>
+            	<a id="collect_265" href="##"><i></i>收藏</a>
+                <a href="##"><i></i>0</a> 
+                                <a href="##"></a>
+                            </div>
+          </div>
+        </div>
+      </li>
+       
+       
+            <li class="item last" id="li_267">
+        <div class="item-con"> 
+          <div class="item-tag-box">
+          <div class="item-tag"><span>爆款</span><i></i></div>          </div>
+          <div class="item-pic">
+          	<a href="##">
+            	<img data-original="images/201602/thumb_img/267_thumb_G_1456452393137.jpg" src="${ctx}/statics/js/267_thumb_G_1456452393137.jpg" title="艺福堂 茗茶 红糖姜茶 女人茶 袋泡茶 速溶姜茶花茶125g/盒*2" class="pic_img_267" style="display: inline;">
+            </a>
+          </div>
+                    <div class="item-info">
+          	<div class="item-price">
+            	<em class="sale-price main-color" title="本店价：¥29.0">¥29.0</em>
+                <em class="sale-count">已售0件</em>
+            </div>
+            <div class="item-name">
+            	<a href="##">艺福堂 茗茶 红糖姜茶 女人茶 袋泡茶 速溶姜茶花茶125g/盒*2</a>
+            </div>
+            <div class="item-operate">
+            	<a class="operate-btn compare-btn" data-goods="267" data-type="0" onclick="Compare.add(267,&#39;艺福堂 茗茶 红糖姜茶 女人茶 袋泡茶 速溶姜茶花茶125g/盒*2&#39;,&#39;0&#39;, &#39;images/201602/thumb_img/267_thumb_G_1456452393137.jpg&#39;, &#39;¥29.0&#39;)"><i></i>对比</a>
+            	<a id="collect_267" href="##"><i></i>收藏</a>
+                <a href="##"><i></i>0</a> 
+                                <a href="##"></a>
+                            </div>
+          </div>
+        </div>
+      </li>
+       
+          </ul>
+   
+</form>
+<script type="Text/Javascript" language="JavaScript">
+<!--
+re_collect();
+function re_collect(id){
+  goods_id = (typeof(id) == "undefined" ? 0 : id);
+  Ajax.call('user.php?act=re_collect', 'id=' + goods_id, re_collectResponse, 'GET', 'JSON');
+}
+function re_collectResponse(result){
+  if (result.goods_id > 0){
+    document.getElementById("collect_" + result.goods_id).className = (result.is_collect == 1 ? "operate-btn collet-btn curr" : "operate-btn collet-btn");
+  }else{
+    $("a[id^='collect_']").className = "operate-btn collet-btn";
+    for(i = 0; i < result.is_collect.length; i++){
+      document.getElementById("collect_" + result.is_collect[i]).className = "operate-btn collet-btn curr";
+    }
+  }
+}
+function selectPage(sel){
+  sel.form.submit();
+}
+//-->
+</script> 
+<script type="text/javascript">
+window.onload = function(){
+  Compare.init();
+  fixpng();
+}
+var button_compare = '';
+var exist = "您已经选择了%s";
+var count_limit = "最多只能选择4个商品进行对比";
+var goods_type_different = "\"%s\"和已选择商品类型不同无法进行对比";
+var compare_no_goods = "您没有选定任何需要比较的商品或者比较的商品数少于 2 个。";
+var btn_buy = "购买";
+var is_cancel = "取消";
+var select_spe = "请选择商品属性";
+</script> 
+ 
+<script type="text/javascript" src="${ctx}/statics/js/json2.js"></script> 
+<div id="compareBox" style="left: 572px;">
+  <div class="menu">
+    <ul>
+      <li class="current" data-value="compare">对比栏</li>
+      <li data-value="history">最近浏览</li>
+    </ul>
+    <a class="hide-compare" href="##"></a>
+    <div style="clear:both"></div>
+  </div>
+  <div id="compareList"><dl><dt style="background-color: rgb(246, 246, 246);">1</dt><dd>您还可以继续添加</dd></dl><dl><dt style="background-color: rgb(246, 246, 246);">2</dt><dd>您还可以继续添加</dd></dl><dl><dt style="background-color: rgb(246, 246, 246);">3</dt><dd>您还可以继续添加</dd></dl><dl><dt style="background-color: rgb(246, 246, 246);">4</dt><dd>您还可以继续添加</dd></dl><div class="operate"><a class="compare">对比</a><a class="clear">清空对比栏</a></div></div>
+  <div id="historyList" style="display:none;">
+  	<span id="sc-prev" class="sc-prev scroll-btn" style="display: none;"></span>
+    <span id="sc-next" class="sc-next scroll-btn" style="display: none;"></span>
+    <div class="scroll_wrap">  </div>
+  </div>
+</div>
+<script>
+$(function(){
+		$('.collet-btn').click(function(){
+		$('.pop-login,.pop-mask').show();	
+	})
+		var scroll_height = $('#filter').offset().top;
+	$(window).scroll(function(){
+		var this_scrollTop = $(this).scrollTop();
+		if(this_scrollTop > scroll_height){
+			$('#filter').addClass('filter-fixed').css({'left':($(window).width()-$('.filter-fixed').outerWidth())/2});
+		}else{
+			$('#filter').removeClass('filter-fixed').css('left','');	
+		}
+	})	
+})
+</script>
+ 
+            <form name="selectPageForm" action="##" method="get">
+      <div class="page">
+    <div class="page-wrap fr"> 
+    	<div class="page-num fl">
+        	            <span class="num prev disabled">
+            	<i class="icon"></i>
+                <i>上一页</i>
+            </span>
+            			 
+			 
+			 
+			<span class="num curr">1</span> 
+			 
+			 
+			 
+			<a class="num" href="##">2</a> 
+			 
+			 
+			 
+            			<a class="num next" href="##">
+                <i>下一页</i>
+            	<i class="icon"></i>
+            </a>
+                    </div>
+      
+      <div class="total">共 2 页</div>
+       
+    </div>
+  </div>
+    </form>
+<script type="Text/Javascript" language="JavaScript">
+<!--
+function selectPage(sel){
+  sel.form.submit();
+}
+//-->
+</script>         </div>
+    </div>
+    <div class="browse-history none">
+	<div class="browse-history-tab clearfix">
+    	        <span class="tab-span">浏览历史</span>
+        <div class="browse-history-line main-bg-color"></div>
+        <div class="browse-history-other">
+        	        	<a onclick="clear_history()" href="##"><i class="icon"></i><em class="text">清空</em></a>
+        </div>
+    </div>
+    <div class="browse-history-con">
+    	<div class="browse-history-inner">
+        	            <ul id="history_list" class="history-panel ">
+                            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+function clear_history(){
+	Ajax.call('user.php', 'act=clear_history',clear_history_Response, 'GET', 'TEXT',1,1);
+}
+function clear_history_Response(res){
+	document.getElementById('history_list').innerHTML = '您已清空最近浏览过的商品';
+}
+if($('.browse-history-con li').length == 0){
+	$('.browse-history').addClass('none');	
+}
+$('.browse-history .browse-history-tab .tab-span').mouseover(function(){
+	$(this).addClass('main-color').siblings('.tab-span').removeClass('main-color');
+	$('.browse-history-line').stop().animate({'left':$(this).position().left,'width':$(this).outerWidth()},500);
+	$('.browse-history-other').find('a').eq($(this).index()).removeClass('none').siblings('a').addClass('none');
+	$('.browse-history-inner ul').eq($(this).index()).removeClass('none').siblings('ul').addClass('none');
+})
+var history_num = 0;
+var history_li = $('.browse-history .recommend-panel li');
+var history_slide_w = history_li.outerWidth()*6;
+var history_slide_num = Math.ceil(history_li.length/6);
+$('.browse-history .history-recommend-change').click(function(){
+	history_num++;
+	if(history_num > (history_slide_num-1)){
+		history_num = 0;	
+	}
+	$('.browse-history .recommend-panel').css({'left':-history_num*history_slide_w});
+})
+</script>   </div>
+  <div class="right-sidebar-con">
+	<div class="right-sidebar-main">
+        <div class="right-sidebar-panel">
+            <div id="quick-links" class="quick-links">
+            	<ul>
+                    <li class="quick-area quick-login">
+                        <a href="##"><i class="setting"></i></a>
+                        <div class="sidebar-user quick-sidebar">
+                        	<i class="arrow-right"></i>
+                            <div class="sidebar-user-info">
+                            	                                <div class="user-pic">
+                                	<div class="user-pic-mask"></div>
+                                    <img src="${ctx}/statics/images/people.gif">
+                                </div>
+                                <p>你好！请<a href="##">登录</a>|<a href="##">注册</a></p>
+                                                            </div>
+                        </div>
+                    </li>
+                    <li class="sidebar-tabs">
+                    	<a href="##"><i class="bonus"></i></a>
+                        <div class="popup">
+                            <font>领红包再购物</font>
+                            <i class="arrow-right"></i>
+                        </div>
+                    </li>
+                    <li class="sidebar-tabs">
+                        <div class="cart-list quick-links-a" id="collectBox">
+                            <i class="cart"></i>
+                            <div class="span">购物车</div>
+                            <span class="ECS_CARTINFO"><form id="formCart" name="formCart" method="post" action=##">
+	<span class="cart_num">0</span>
+	<div class="sidebar-cart-box">
+        <h3 class="sidebar-panel-header">
+            <a href="##"><i class="cart-icon"></i><em class="title">购物车</em></a>
+            <span class="close-panel"></span>
+        </h3>
+        <div class="cart-panel-main">
+            <div class="cart-panel-content" style="height: 883px;">
+                                <div class="tip-box">
+                  <i class="tip-icon"></i>
+                  <div class="tip-text">您的购物车里什么都没有哦<br><a class="main-color" href="##">再去看看吧</a></div>
+                </div>
+                            </div>
+        </div>
+            </div>
+<script type="text/javascript">
+function deleteCartGoods(rec_id){
+	Ajax.call('delete_cart_goods.php', 'id='+rec_id, deleteCartGoodsResponse, 'POST', 'JSON');
+}
+
+/**
+ * 接收返回的信息
+ */
+function deleteCartGoodsResponse(res){
+  if (res.error){
+    alert(res.err_msg);
+  }else{
+      $('.ECS_CARTINFO').html(res.content);
+	  $('.cart-panel-content').height($(window).height()-90);
+  }
+}
+</script> 
+</form>
+</span>
+                        </div>
+                    </li>
+                    <li class="sidebar-tabs">
+                        <a href="##"><i class="history"></i></a>
+                        <div class="popup">
+                            <font id="mpbtn_histroy">我看过的</font>
+                            <i class="arrow-right"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="##"><i class="stores"></i></a>
+                        <div class="popup">
+                            我关注的店铺
+                            <i class="arrow-right"></i>
+                        </div>
+                    </li>
+                    <li id="collectGoods">
+                        <a href="##"><i class="collect"></i></a>
+                        <div class="popup">
+                            我的收藏
+                            <i class="arrow-right"></i>
+                        </div>
+                    </li>
+                                        <li>
+                        <a href="##"><i class="contrast"></i></a>
+                        <div class="popup">
+                            对比商品
+                            <i class="arrow-right"></i>
+                        </div>
+                    </li>
+                                    </ul>
+            </div>
+            <div class="quick-toggle">
+            	<ul>
+                    <li class="quick-area">
+                    	<a class="quick-links-a" href="##"><i class="customer-service"></i></a>
+                        <div class="sidebar-service quick-sidebar">
+                        	<i class="arrow-right"></i>
+                            
+<div class="customer-service customer-service-online">
+    <a target="_self" href="##"><span class="icon-online"></span>在线客服</a>
+</div>
+<div class="customer-service">
+    <a target="_blank" href="##"><span class="icon-qq"></span>在线客服</a>
+</div>
+<div class="customer-service">
+    <a target="_blank" href="##"><span class="icon-ww"></span>在线客服</a>
+</div>
+                        </div>
+                    </li>
+                    <li class="quick-area">
+                    	<a class="quick-links-a" href="##"><i class="qr-code"></i></a>
+                        <div class="sidebar-code quick-sidebar">
+                        	<i class="arrow-right"></i>
+                            <img src="${ctx}/statics/images/weixin.jpg">
+                        </div>
+                    </li>
+                    <li class="returnTop" style="display: none;">
+                        <a href="##"><i class="top"></i></a>
+                        <div class="popup">
+                        	返回顶部
+                        	<i class="arrow-right"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="">
+        	
+            <div class="right-sidebar-panels">
+            	<h3 class="sidebar-panel-header">
+                    <a href="##"><i class="bonus-icon"></i><em class="title">红包</em></a>
+                    <span class="close-panel"></span>
+                </h3>
+                <div class="bonus-panel-main">
+                    <div class="bonus-panel-content" style="height: 933px;">
+                    	<script type="text/javascript">
+						function fun(type_id, no_have_val){
+							no_have = (typeof(no_have_val) == "undefined" ? 0 : no_have_val)
+							Ajax.call('user.php?act=user_bonus', 'id=' + type_id + '&no_have=' + no_have, bounsResponse, 'GET', 'JSON');
+						}
+						function bounsResponse(result){
+							$('.pop-compare,.pop-mask').show();
+							$('.pop-compare .pop-text').html(result.message);
+							$('.pop-compare').css({'top':($(window).height()-$('.pop-compare').height())/2});
+						}
+						</script>
+												<div class="bonus-list">
+							 
+														 
+														 
+														 
+														 
+														 
+														 
+																				</div>
+						                    </div>
+                </div>
+            </div>
+            
+        	
+        	<div class="ECS_CARTINFO right-sidebar-panels"><form id="formCart" name="formCart" method="post" action="##">
+	<span class="cart_num">0</span>
+	<div class="sidebar-cart-box">
+        <h3 class="sidebar-panel-header">
+            <a href="##"><i class="cart-icon"></i><em class="title">购物车</em></a>
+            <span class="close-panel"></span>
+        </h3>
+        <div class="cart-panel-main">
+            <div class="cart-panel-content" style="height: 883px;">
+                                <div class="tip-box">
+                  <i class="tip-icon"></i>
+                  <div class="tip-text">您的购物车里什么都没有哦<br><a class="main-color" href="##">再去看看吧</a></div>
+                </div>
+                            </div>
+        </div>
+            </div>
+<script type="text/javascript">
+function deleteCartGoods(rec_id){
+	Ajax.call('delete_cart_goods.php', 'id='+rec_id, deleteCartGoodsResponse, 'POST', 'JSON');
+}
+
+/**
+ * 接收返回的信息
+ */
+function deleteCartGoodsResponse(res){
+  if (res.error){
+    alert(res.err_msg);
+  }else{
+      $('.ECS_CARTINFO').html(res.content);
+	  $('.cart-panel-content').height($(window).height()-90);
+  }
+}
+</script> 
+</form>
+</div>
+        	
+            
+        	<div class="right-sidebar-panels">
+				<h3 class="sidebar-panel-header">
+                	<a href="##"><i></i><em class="title">我的足迹</em></a>
+                    <span class="close-panel"></span>
+                </h3>
+          		<div class="sidebar-panel-main">
+            		<div class="sidebar-panel-content">
+              			<div class="history-panel">
+              				<ul>
+                				                			</ul>
+     		  			</div>
+            		</div>
+          		</div>
+        	</div>
+        	
+        </div>
+    </div>
+</div>
+<div class="pop-main pop-compare">
+	<div class="pop-header">
+    	<span>温馨提示</span>
+        <a class="pop-close" href="##"></a>
+    </div>
+    <div class="pop-con">
+    	<i class="pop-icon"></i>
+        <p class="pop-text"></p>
+        <a href="##">确定</a><a href="##">取消</a>
+    </div>
+</div>
+<div class="pop-main pop-compare-small">
+	<div class="pop-header">
+    	<span>温馨提示</span>
+        <a class="pop-close" href="##"></a>
+    </div>
+    <div class="pop-con">
+    	<i class="pop-icon"></i>
+        <p class="pop-text"></p>
+        <a href="##">关闭</a>
+    </div>
+</div>
+<div id="tell-me-result" class="tell-me-form" style="display:none;">
+	<div class="pop-header"><span>温馨提示</span><a href="##"></a></div>
+    <div class="tell-me-content">
+    	<div class="tell-me-result">
+            <div class="result-icon"></div>
+            <div class="result-text">
+            	<div class="title"></div>
+                <div class="bottom">
+                	<span onclick="javascript:closeDiv1();" class="cancel-btn">关闭</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pop-mask"></div>
+<div class="pop-main pop-login" style="top: 258.5px;">
+  <div class="pop-header"> <span>您尚未登录</span><a class="pop-close" href="##"></a></div>
+  <div class="pop-con">
+    <form name="formLogin" action="##" method="post" onsubmit="return user_login();">
+      <div class="form">
+      	<div class="mt">
+        	<h2>用户登陆</h2><a href="##"><span class="text">立即注册</span><i class="icon"></i></a>
+        </div>
+        <div class="mc">
+        	<div class="msg-wrap">
+            	<div class="msg-error">
+                	<i class="msg-icon"></i><span id="msg-error-text" class="msg-error-text"></span>
+                </div>
+            </div>
+        	<div class="item item-name">
+            	<i class="icon"></i>
+                <input name="username" id="username" type="text" class="text" value="" tabindex="1" placeholder="手机号/用户名/邮箱">
+            </div>
+            <div class="item item-password">
+                <i class="icon"></i>
+                <input type="password" name="password" id="password" class="text" value="" tabindex="2" placeholder="密码">
+            </div>
+                        <div class="item item-authcode" id="o-authcode">
+            	<div class="item-detail fl">
+                    <i class="icon"></i>
+                    <input type="text" id="authcode" name="captcha" class="text text-1" tabindex="3" placeholder="验证码">
+                </div>
+                <label class="img fl">
+                    <img src="${ctx}/statics/images/captcha.php" alt="captcha" style="vertical-align: middle;cursor: pointer;" onclick="this.src=&#39;captcha.php?is_login=1&amp;&#39;+Math.random()">
+                </label>
+            </div>
+                        <div class="safety" id="autoentry">
+                <input type="checkbox" value="1" name="remember" id="remember" class="checkbox">
+                <label for="remember" class="mar-b">请保存我这次的登录信息</label>
+                <a class="forget_password fr" href="##">忘记密码？</a> 
+            </div>
+            <div class="login-btn">
+              <input type="hidden" name="act" value="act_login">
+              <input type="hidden" name="back_act" value="">
+              <input type="submit" name="submit" class="btn-img" id="loginsubmit" value="立即登录">
+            </div>
+            <div class="item-coagent">
+		    	<a href="##"><i class="weixin"></i>微信</a>
+            	<a href="##"><i class="qq"></i>QQ</a>
+            	<a href="##"><i class="sina"></i>新浪</a>
+            	<a href="##"><i class="alipay"></i>支付宝</a>
+            </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<script type="text/javascript">	
+$(window).scroll(function(){ 
+	if($(this).scrollTop() > $(window).height() ){ 
+		$('.returnTop').show();
+	}else{ 
+		$('.returnTop').hide();
+	} 
+}) 
+$('.cart-panel-content').height($(window).height()-90);
+$('.bonus-panel-content').height($(window).height()-40);
+$(".returnTop").click(function(){
+	$('body,html').animate({scrollTop:0},800);
+	return false;
+});
+//点击用户图标弹出登录框
+$('.quick-login .quick-links-a,.quick-login .quick-login-a,.customer-service-online a').click(function(){
+	$('.pop-login,.pop-mask').show();
+})
+$('.quick-area').hover(function(){
+	$(this).find('.quick-sidebar').toggle();
+})
+//移动图标出现文字
+$(".right-sidebar-panel li").mouseenter(function(){
+	$(this).children(".popup").stop().animate({left:-92,queue:true});
+	$(this).children(".popup").css("visibility","visible");
+	$(this).children(".ibar_login_box").css("display","block");
+});
+$(".right-sidebar-panel li").mouseleave(function(){
+	$(this).children(".popup").css("visibility","hidden");
+	$(this).children(".popup").stop().animate({left:-121,queue:true});
+	$(this).children(".ibar_login_box").css("display","none");
+});
+//点击购物车、用户信息以及浏览历史事件
+$('.sidebar-tabs').click(function(){
+	if($('.right-sidebar-main').hasClass('right-sidebar-main-open')&&$(this).hasClass('current')){
+		$('.right-sidebar-main').removeClass('right-sidebar-main-open');
+		$(this).removeClass('current');
+		$('.right-sidebar-panels').eq($(this).index()-1).removeClass('animate-in').addClass('animate-out').css('z-index',1);
+	}else{
+		$(this).addClass('current').siblings('.sidebar-tabs').removeClass('current');
+		$('.right-sidebar-main').addClass('right-sidebar-main-open');
+		$('.right-sidebar-panels').eq($(this).index()-1).addClass('animate-in').removeClass('animate-out').css('z-index',2).siblings('.right-sidebar-panels').removeClass('animate-in').addClass('animate-out').css('z-index',1);
+	}
+});
+$(".right-sidebar-panels").on('click', '.close-panel', function () {
+	$('.sidebar-tabs').removeClass('current');
+	$('.right-sidebar-main').removeClass('right-sidebar-main-open');
+	$('.right-sidebar-panels').removeClass('animate-out');
+});
+$(document).click(function(e){ 
+	var target = $(e.target); 
+	if(target.closest('.right-sidebar-con').length == 0){ 
+		$('.right-sidebar-main').removeClass('right-sidebar-main-open');
+		$('.sidebar-tabs').removeClass('current');
+		$('.right-sidebar-panels').removeClass('animate-in').addClass('animate-out').css('z-index',1);
+	} 
+}) 
+$('.pop-login').css('top',($(window).height()-$('.pop-login').height())/2);
+$('.pop-close').click(function(){
+	$('.pop-main,.pop-mask').hide();
+	$('form[name="formLogin"]').find('.msg-wrap').css('visibility','hidden');
+	$('.pop-login .item,.pop-login .item-detail').removeClass('item-error');
+	$('.pop-login .text').val('');
+})
+$('.pop-login .item .text').focus(function(){
+	$(this).addClass('')	
+})
+</script>  <script type="text/javascript" src="${ctx}/statics/js/arrive_notice.js"></script>
+<div class="tell-me-form" style="display: none; left: 701.5px; top: 295.5px;" id="tell-me-table">
+	<div class="pop-header"><span>到货通知</span><a href="##"></a></div>
+    <div class="tell-me-content">
+    	<table cellpadding="0" cellspacing="0" width="100%" border="0">
+              <tbody><tr>
+                <td colspan="2" align="left">
+                    <div class="blank10"></div>
+                    <div class="notice-note">
+                        <p class="main-color" id="rgoods_name"></p>
+                        当商品进行补货时，我们将以短信、邮件的形式通知您，最多发送一次，不会对您造成干扰。
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td width="30%" align="right"><font class="main-color">*</font>数量：</td>
+                <td align="left">
+                    <input type="text" value="1" id="book-number" class="inputBg">
+                    <div class="tell-me-notice">
+                        <i class="notice-icon"></i><span class="notice-text num-notice"></span>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td align="right"><font class="main-color">*</font>手机号码：</td>
+                <td align="left">
+                    <input type="text" value="" id="phone-num" class="inputBg">
+                    <div class="tell-me-notice">
+                        <i class="notice-icon"></i><span class="notice-text phone-notice"></span>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td align="right"><font class="main-color">*</font>电子邮箱：</td>
+                <td align="left">
+                    <input type="text" value="" id="arrival-email" class="inputBg">
+                    <div class="tell-me-notice">
+                        <i class="notice-icon"></i><span class="notice-text email-notice"></span>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center" style="padding:20px 0 30px;">
+                    <input type="button" value="马上提交" onclick="tell_me1(183)" class="sure-btn">
+                </td>
+              </tr>
+            </tbody></table>
+    </div>
+</div>
+  <div class="site-footer">
+        <div class="footer-related">
+            <div class="footer-article w1210"> 
+    <dl class="col-article col-article-first">
+    <dt>新手上路 </dt>
+        <dd><a rel="nofollow" href="##">售后流程</a></dd>
+        <dd><a rel="nofollow" href="##">购物流程</a></dd>
+        <dd><a rel="nofollow" href="##">订购方式</a></dd>
+        <dd><a rel="nofollow" href="##">在线支付</a></dd>
+        <dd><a rel="nofollow" href="##">公司转账</a></dd>
+      </dl>
+    <dl class="col-article ">
+    <dt>配送方式 </dt>
+        <dd><a rel="nofollow" href="##">货到付款区域</a></dd>
+        <dd><a rel="nofollow" href="##">配送支付查询</a></dd>
+        <dd><a rel="nofollow" href="##">支付方式说明</a></dd>
+        <dd><a rel="nofollow" href="##">如何送礼</a></dd>
+        <dd><a rel="nofollow" href="##">Global Shipping</a></dd>
+      </dl>
+    <dl class="col-article ">
+    <dt>购物指南</dt>
+        <dd><a rel="nofollow" href="##">常见问题</a></dd>
+        <dd><a rel="nofollow" href="##">订购流程</a></dd>
+        <dd><a rel="nofollow" href="##">注册新会员</a></dd>
+        <dd><a rel="nofollow" href="##">团购/机票</a></dd>
+        <dd><a rel="nofollow" href="##">联系客服</a></dd>
+      </dl>
+    <dl class="col-article ">
+    <dt>售后服务</dt>
+        <dd><a rel="nofollow" href="##">退换货原则</a></dd>
+        <dd><a rel="nofollow" href="##">售后服务保证</a></dd>
+        <dd><a rel="nofollow" href="##">换货流程</a></dd>
+        <dd><a rel="nofollow" href="##">退款说明</a></dd>
+        <dd><a rel="nofollow" href="##">返修/退换货</a></dd>
+      </dl>
+    <dl class="col-article ">
+    <dt>关于我们 </dt>
+        <dd><a rel="nofollow" href="##">网站故障报告</a></dd>
+        <dd><a rel="nofollow" href="##">选机咨询</a></dd>
+        <dd><a rel="nofollow" href="##">投诉与建议</a></dd>
+        <dd><a rel="nofollow" href="##">节能补贴</a></dd>
+        <dd><a rel="nofollow" href="##">关于我们</a></dd>
+      </dl>
+    <dl class="col-article">
+    <dt>服务支持</dt>
+    <dd>售前咨询 020-34506590</dd>
+    <dd>售后咨询 020-34506590</dd>
+    <dd>客服 QQ 38306293</dd>
+    <dd>工作时间 9：00-17：30</dd>
+  </dl>
+</div>
+                <div class="footer-info clearfix">
+      <div class="info-text">
+      	        <p class="nav_bottom">
+                                    <a href="##">关于我们</a><em>|</em>
+                        <a href="##">联系我们</a><em>|</em>
+                        <a href="##">商家入驻</a><em>|</em>
+                        <a href="##">版权证书</a><em>|</em>
+                        <a href="##">手机商城</a><em>|</em>
+                        <a href="##">销售联盟</a><em>|</em>
+                        <a href="##">商城社区</a><em>|</em>
+                        <a href="##">企业文化</a><em>|</em>
+                        <a href="##">帮助中心</a><em>|</em>
+                        <a href="##">留言板</a><em style="display:none">|</em>
+                                          		ICP备案证书号:<a href="##">粤ICP备06122404号</a>
+      		        </p>
+        <p>
+             <a href="##">© 2005-2018 网软志成B2B2C电商平台系统多用户商城系统模板 版权所有，并保留所有权利。</a> <a href="##">广州市天河区国家软件园产业基地8栋502 </a>
+             <a href="##">              Tel: 020-34506590              </a>
+             <a href="##">              E-mail: 38306293@qq.com              </a>
+         </p>
+         <p>
+                            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000200717'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000200717%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1000200717"><a href="##"><img border="0" hspace="0" vspace="0" src="${ctx}/statics/js/pic1.gif"></a></span><script src="${ctx}/statics/js/z_stat.php" type="text/javascript"></script><script src="${ctx}/statics/js/core.php" charset="utf-8" type="text/javascript"></script>                                                                                    <a href="##"><img src="${ctx}/statics/images/pa" height="16" border="0" alt="QQ"> 394223545</a>
+                                                                                                  <a href="##"><img src="${ctx}/statics/images/online.ww" width="16" height="16" border="0" alt="淘宝旺旺">38306293</a>
+                                                                                                                                                                	</p>
+      </div>
+    </div>
+<img src="##" alt="" style="width:0px;height:0px;display:none;">
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+  <tbody>
+    
+    <tr>
+      <td bgcolor="#555555"><table cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+        <tbody>
+          <tr>
+            <td align="middle" height="22"><font color="#ffffff"><span>电话：020-34506590 34700400 34709708 13719472523 13527894748</span> </font></td>
+          </tr>
+             <tr>
+            <td align="middle" height="22"><font color="#ffffff">微信号：13719472523&nbsp;&nbsp;13527894748&nbsp;&nbsp; 联系邮箱：38306293@qq.com</font></td>
+          </tr>
+                     <tr>
+            <td align="middle" height="22"><font color="#ffffff">公司地址：广州市天河区国家软件园产业基地8栋502 软著登字第0830353号　登记号 2014SR161116 </font></td>
+          </tr>
+		  <tr>
+            <td align="middle" height="22"><font color="#ffffff"><span class="css2">客服QQ:290116505</span><a target="blank" href="##"><img border="0" src="${ctx}/statics/js/qqonline.gif" alt="网软志成客服为你服务"></a><span class="css2">38306293<a target="blank" href="##"><img border="0" src="${ctx}/statics/js/qqonline.gif" alt="网软志成客服为你服务"></a>417586492</span><font face="Verdana"><a target="blank" href="##"><img border="0" src="${ctx}/statics/js/qqonline.gif" alt="网软志成客服为你服务"></a></font><span class="css2">657248708</span><font face="Verdana"><a target="blank" href="##"><img border="0" src="${ctx}/statics/js/qqonline.gif" alt="网软志成客服为你服务"></a></font><br><span class="css2">客服QQ:454882888</span><font face="Verdana"><a target="blank" href="##"><img border="0" src="${ctx}/statics/js/qqonline.gif" alt="网软志成客服为你服务"></a></font><span class="css2">394223545</span><font face="Verdana"><a target="blank" href="##"><img border="0" src="${ctx}/statics/js/qqonline.gif" alt="网软志成客服为你服务"></a></font><span class="css2">469648611</span><font face="Verdana"><a target="blank" href="##"><img border="0" src="${ctx}/statics/js/qqonline.gif" alt="网软志成客服为你服务"></a></font><span class="css2">314730679</span><font face="Verdana"><a target="blank" href="##"><img border="0" src="${ctx}/statics/js/qqonline.gif" alt="网软志成客服为你服务"></a></font></font></td>
+          </tr>
+          <tr>
+            <td height="22" align="middle"><font color="#ffffff">Copyright(c)2000-2030 www.wrzc.net <span>广州网软志成信息科技有限公司</span> 版权所有</font> <a href="##"><font color="#FF0000">进入后台管理</font></a> </td>
+          </tr>
+        </tbody>
+      </table></td>
+    </tr>
+  </tbody>
+</table>
+<script type="text/javascript">
+Ajax.call('api/okgoods.php', '', '', 'GET', 'JSON');
+//预售
+Ajax.call('pre_sale.php?act=check_order', '', '', 'GET', 'JSON');
+</script>
+<script type="text/javascript" src="${ctx}/statics/js/base.js"></script>
+      </div>
+  </div>
+<script>//收集skuId
+var skuIds = [];
+$('ul.list-h li[sku]').each(function(i){
+    skuIds.push($(this).attr('sku'));
+})
+function setPrice(url){
+  var max = 'max='+document.getElementById('price_max').value;
+  var min = 'min='+document.getElementById('price_min').value;
+  var remin = /min=([0-9])*/ig;  //•g（全文查找）；•i（忽略大小写）；•m（多行查找）  
+  var remax = /max=([0-9])*/ig;  //•g（全文查找）；•i（忽略大小写）；•m（多行查找）  
+  var nurl = url.replace(remin,min).replace(remax,max);
+  location.href = nurl;
+}
+</script> 
+ 
+<script type="text/javascript">
+$("img").lazyload({
+    effect       : "fadeIn",
+	 skip_invisible : true,
+	 failure_limit : 20
+});
+</script> 
+<script type="text/javascript" src="${ctx}/statics/js/compare(1).js"></script> 
+
+
+</body></html>
