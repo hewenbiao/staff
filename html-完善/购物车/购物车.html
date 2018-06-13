@@ -13,18 +13,18 @@
 		<title>购物流程_网软志成B2B2C电商平台系统多用户商城系统模板</title>
 
 		
-		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="${ctx}/statics/js/jquery-1.9.1.min.js"></script>
 		<script>
 			var pay_balance_id = ; //保存余额支付的id做为js全局变量
 		</script>
-		<script type="text/javascript" src="js/jquery.json.js"></script>
-		<script type="text/javascript" src="js/transport.js"></script>
-		<script type="text/javascript" src="js/common.js"></script>
-		<script type="text/javascript" src="js/shopping_flow.js"></script>
+		<script type="text/javascript" src="${ctx}/statics/js/jquery.json.js"></script>
+		<script type="text/javascript" src="${ctx}/statics/js/transport.js"></script>
+		<script type="text/javascript" src="${ctx}/statics/js/common.js"></script>
+		<script type="text/javascript" src="${ctx}/statics/js/shopping_flow.js"></script>
 		
 	</head>
-	<link rel="stylesheet" type="text/css" href="css/flow.css"/>
-	<link rel="stylesheet" type="text/css" href="css/wrzc_common.css"/>
+	<link rel="stylesheet" type="text/css" href="${ctx}/statics/css/flow.css"/>
+	<link rel="stylesheet" type="text/css" href="${ctx}/statics/css/wrzc_common.css"/>
 	<body style="cursor: auto;">
 
 		<div id="popup_window" style="display:none;">
@@ -41,8 +41,8 @@
 
 		<div id="site-nav">
 			<div class="sn-container w1210">
-				<script type="text/javascript" src="js/utils.js"></script>
-				<script type="text/javascript" src="js/common.min.js"></script>
+				<script type="text/javascript" src="${ctx}/statics/js/utils.js"></script>
+				<script type="text/javascript" src="${ctx}/statics/js/common.min.js"></script>
 				<font id="login-info" class="sn-login-info">
 					<em>欢迎光临本店!</em>
 					<a class="sn-login main-color" href="#">请登录</a>
@@ -109,7 +109,7 @@
 									<li class="app_down">
 										<a href="##"></a>
 										<p>微信商城</p>
-										<img src="images/app.jpg" alt="请用手机浏览器扫描" width="86px" height="240px">
+										<img src="${ctx}/statics/images/app.jpg" alt="请用手机浏览器扫描" width="86px" height="240px">
 									</li>
 								</ul>
 							</div>
@@ -121,10 +121,7 @@
 		<script>
 			header_login();
 
-			/*function header_login() {
-				Ajax.call('login_act_ajax.php', '', loginactResponse, 'GET', 'JSON', '1', '1');
-			}
-*/
+		
 			function loginactResponse(result) {
 				var MEMBERZONE = document.getElementById('login-info');
 				MEMBERZONE.innerHTML = result.memberinfo;
@@ -132,7 +129,7 @@
 		</script>
 		<div class="header w990">
 			<div class="mall-logo">
-				<a href="##"><img src="images/logo.gif"></a>
+				<a href="##"><img src="${ctx}/statics/images/logo.gif"></a>
 			</div>
 		</div>
 		<div class="blank15"></div>
@@ -165,12 +162,12 @@
 				</ol>
 			</div>
 
-			<script type="text/javascript" src="js/showdiv.js"></script>
+			<script type="text/javascript" src="${ctx}/statics/js/showdiv.js"></script>
 			<div>
 				<script>
 					document.write(unescape('%3Cscript id="_ju_" src="http://b2b2c.wygk.cn/js/showdiv.js?_t=1528128972531" %3E%3C/script%3E'));
 				</script>
-				<script id="_ju_" src="js/showdiv.js(1)"></script>
+				<script id="_ju_" src="${ctx}/statics/js/showdiv.js(1)"></script>
 			</div>
 			<script type="text/javascript">
 				var user_name_empty = "请输入您的用户名！";
@@ -200,7 +197,7 @@
 						</tbody>
 					</table>
 				</div>
-				<form id="formCart1" name="formCart" method="post" action="http://b2b2c.wygk.cn/flow.php">
+				<form id="formCart1" name="formCart" method="post" action="##">
 					<input type="hidden" name="step" id="actname" value="update_cart">
 				</form>
 				<table width="100%" align="center" border="0" cellpadding="5" cellspacing="6" style="border-top:1px solid #eee;">
@@ -399,7 +396,7 @@
 					<ul class="">
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/401_thumb_G_1527042853249.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/401_thumb_G_1527042853249.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">adj</a>
@@ -411,7 +408,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/1409272951415985699.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/1409272951415985699.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">12</a>
@@ -423,7 +420,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/1409272951415985699.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/1409272951415985699.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">22</a>
@@ -435,7 +432,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/1409272951415985699.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/1409272951415985699.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">123</a>
@@ -447,7 +444,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/1409272951415985699.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/1409272951415985699.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">ASD</a>
@@ -459,7 +456,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/1409272951415985699.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/1409272951415985699.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">PHstandard Blood Pre...</a>
@@ -471,7 +468,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/1409272951415985699.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/1409272951415985699.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">Microbishi 12pcs Pro...</a>
@@ -483,7 +480,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/1409272951415985699.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/1409272951415985699.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">Whitening Moisturizi...</a>
@@ -495,7 +492,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/1409272951415985699.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/1409272951415985699.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">Skin Tone Tenderness...</a>
@@ -507,7 +504,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/1409272951415985699.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/1409272951415985699.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">Mung Bean Mud Mask O...</a>
@@ -521,7 +518,7 @@
 					<ul class="curr">
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/401_thumb_G_1527042853249.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/401_thumb_G_1527042853249.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">adj</a>
@@ -533,7 +530,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/1409272951415985699.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/1409272951415985699.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">12</a>
@@ -545,7 +542,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/8.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/8.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">boost.post FC Pocket...</a>
@@ -557,7 +554,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/3.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/3.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">phshop Electric Mass...</a>
@@ -569,7 +566,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/1409272951415985699.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/1409272951415985699.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">22</a>
@@ -581,7 +578,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/1409272951415985699.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/1409272951415985699.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">123</a>
@@ -593,7 +590,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/1409272951415985699.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/1409272951415985699.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">ASD</a>
@@ -605,7 +602,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/1409272951415985699.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/1409272951415985699.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">PHstandard Blood Pre...</a>
@@ -617,7 +614,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/1409272951415985699.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/1409272951415985699.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">Microbishi 12pcs Pro...</a>
@@ -629,7 +626,7 @@
 						</li>
 						<li>
 							<p class="pic">
-								<a href="##"><img src="images/1409272951415985699.jpg"></a>
+								<a href="##"><img src="${ctx}/statics/images/1409272951415985699.jpg"></a>
 							</p>
 							<p class="name">
 								<a href="##">Whitening Moisturizi...</a>
@@ -665,9 +662,7 @@
 
 			<div class="blank15"></div>
 		</div>
-		<script type="text/javascript" src="./购物车_files/index.php" id="scripts2s"></script>
-		<script type="text/javascript" src="./购物车_files/index(1).php" id="scriptsad_popup"></script>
-		<script type="text/javascript" src="js/arrive_notice.js"></script>
+		<script type="text/javascript" src="${ctx}/statics/js/arrive_notice.js"></script>
 		<div class="tell-me-form" style="display: none; left: 701.5px; top: 271px;" id="tell-me-table">
 			<div class="pop-header"><span>到货通知</span>
 				<a href="##"></a>
@@ -724,7 +719,7 @@
 			</div>
 		</div>
 
-		<script type="text/javascript" src="js/user.js"></script>
+		<script type="text/javascript" src="${ctx}/statics/js/user.js"></script>
 		<div class="right-sidebar-con">
 			<div class="right-sidebar-main">
 				<div class="right-sidebar-panel">
@@ -737,7 +732,7 @@
 									<div class="sidebar-user-info">
 										<div class="user-pic">
 											<div class="user-pic-mask"></div>
-											<img src="images/people.gif">
+											<img src="${ctx}/statics/images/people.gif">
 										</div>
 										<p>你好！请
 											<a href="##">登录</a>|
@@ -757,7 +752,7 @@
 								<div class="cart-list quick-links-a" id="collectBox">
 									<i class="cart"></i>
 									<div class="span">购物车</div>
-									<span class="ECS_CARTINFO"><form id="formCart" name="formCart" method="post" action="http://b2b2c.wygk.cn/flow.php">
+									<span class="ECS_CARTINFO"><form id="formCart" name="formCart" method="post" action="##">
 	<span class="cart_num">0</span>
 									<div class="sidebar-cart-box">
 										<h3 class="sidebar-panel-header">
@@ -841,7 +836,7 @@
 								<a class="quick-links-a" href="#"><i class="qr-code"></i></a>
 								<div class="sidebar-code quick-sidebar">
 									<i class="arrow-right"></i>
-									<img src="images/weixin.jpg">
+									<img src="${ctx}/statics/images/weixin.jpg">
 								</div>
 							</li>
 							<li class="returnTop" style="display: none;">
@@ -885,7 +880,7 @@
 					</div>
 
 					<div class="ECS_CARTINFO right-sidebar-panels animate-out" style="z-index: 1;">
-						<form id="formCart" name="formCart" method="post" action="http://b2b2c.wygk.cn/flow.php">
+						<form id="formCart" name="formCart" method="post" action="##">
 							<span class="cart_num">0</span>
 							<div class="sidebar-cart-box">
 								<h3 class="sidebar-panel-header">
@@ -990,7 +985,7 @@
 				<a class="pop-close" href="#"></a>
 			</div>
 			<div class="pop-con">
-				<form name="formLogin" action="http://b2b2c.wygk.cn/user.php" method="post" onsubmit="return user_login();">
+				<form name="formLogin" action="##" method="post" onsubmit="return user_login();">
 					<div class="form">
 						<div class="mt">
 							<h2>用户登陆</h2>
@@ -1016,8 +1011,7 @@
 									<input type="text" id="authcode" name="captcha" class="text text-1" tabindex="3" placeholder="验证码">
 								</div>
 								<label class="img fl">
-                    <img src="./购物车_files/captcha.php" alt="captcha" style="vertical-align: middle;cursor: pointer;" onclick="this.src=&#39;captcha.php?is_login=1&amp;&#39;+Math.random()">
-                </label>
+                    </label>
 							</div>
 							<div class="safety" id="autoentry">
 								<input type="checkbox" value="1" name="remember" id="remember" class="checkbox">
@@ -1144,11 +1138,9 @@
 							<script type="text/javascript">
 								var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
 								document.write(unescape("%3Cspan id='cnzz_stat_icon_1000200717'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000200717%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
-							</script><span id="cnzz_stat_icon_1000200717"><a href="##"><img border="0" hspace="0" vspace="0" src="images/pic1.gif"></a></span>
-							<script src="./购物车_files/z_stat.php" type="text/javascript"></script>
-							<script src="./购物车_files/core.php" charset="utf-8" type="text/javascript"></script>
-							<a href="##"><img src="images/button_old_41.gif" height="16" border="0" alt="QQ"> 394223545</a>
-							<a href="##"><img src="images/T1tm9.XdRnXXaHNz_X-16-16.gif" width="16" height="16" border="0" alt="淘宝旺旺">38306293</a>
+							</script><span id="cnzz_stat_icon_1000200717"><a href="##"><img border="0" hspace="0" vspace="0" src="${ctx}/statics/images/pic1.gif"></a></span>
+						<a href="##"><img src="${ctx}/statics/images/button_old_41.gif" height="16" border="0" alt="QQ"> 394223545</a>
+							<a href="##"><img src="${ctx}/statics/images/T1tm9.XdRnXXaHNz_X-16-16.gif" width="16" height="16" border="0" alt="淘宝旺旺">38306293</a>
 						</p>
 					</div>
 				</div>
@@ -1178,24 +1170,24 @@
 										<tr>
 											<td align="middle" height="22">
 												<font color="#ffffff"><span class="css2">客服QQ:290116505</span>
-													<a target="blank" href="#"><img border="0" src="images/qqonline.gif" alt="网软志成客服为你服务"></a><span class="css2">38306293<a target="blank" href="#"><img border="0" src="images/qqonline.gif" alt="网软志成客服为你服务"></a>417586492</span>
+													<a target="blank" href="#"><img border="0" src="${ctx}/statics/images/qqonline.gif" alt="网软志成客服为你服务"></a><span class="css2">38306293<a target="blank" href="#"><img border="0" src="${ctx}/statics/images/qqonline.gif" alt="网软志成客服为你服务"></a>417586492</span>
 													<font face="Verdana">
-														<a target="blank" href="#"><img border="0" src="images/qqonline.gif" alt="网软志成客服为你服务"></a>
+														<a target="blank" href="#"><img border="0" src="${ctx}/statics/images/qqonline.gif" alt="网软志成客服为你服务"></a>
 													</font><span class="css2">657248708</span>
 													<font face="Verdana">
-														<a target="blank" href="#"><img border="0" src="images/qqonline.gif" alt="网软志成客服为你服务"></a>
+														<a target="blank" href="#"><img border="0" src="${ctx}/statics/images/qqonline.gif" alt="网软志成客服为你服务"></a>
 													</font><br><span class="css2">客服QQ:454882888</span>
 													<font face="Verdana">
-														<a target="blank" href="#"><img border="0" src="images/qqonline.gif" alt="网软志成客服为你服务"></a>
+														<a target="blank" href="#"><img border="0" src="${ctx}/statics/images/qqonline.gif" alt="网软志成客服为你服务"></a>
 													</font><span class="css2">394223545</span>
 													<font face="Verdana">
-														<a target="blank" href="#"><img border="0" src="images/qqonline.gif" alt="网软志成客服为你服务"></a>
+														<a target="blank" href="#"><img border="0" src="${ctx}/statics/images/qqonline.gif" alt="网软志成客服为你服务"></a>
 													</font><span class="css2">469648611</span>
 													<font face="Verdana">
-														<a target="blank" href="#"><img border="0" src="images/qqonline.gif" alt="网软志成客服为你服务"></a>
+														<a target="blank" href="#"><img border="0" src="${ctx}/statics/images/qqonline.gif" alt="网软志成客服为你服务"></a>
 													</font><span class="css2">314730679</span>
 													<font face="Verdana">
-														<a target="blank" href="#"><img border="0" src="images/qqonline.gif" alt="网软志成客服为你服务"></a>
+														<a target="blank" href="#"><img border="0" src="${ctx}/statics/images/qqonline.gif" alt="网软志成客服为你服务"></a>
 													</font>
 												</font>
 											</td>
@@ -1215,12 +1207,7 @@
 					</tbody>
 				</table>
 
-				<!--<script type="text/javascript">
-					Ajax.call('api/okgoods.php', '', '', 'GET', 'JSON');
-					//预售
-					Ajax.call('pre_sale.php?act=check_order', '', '', 'GET', 'JSON');
-				</script>-->
-				<script type="text/javascript" src="js/base.js"></script>
+			<script type="text/javascript" src="${ctx}/statics/js/base.js"></script>
 
 			</div>
 		</div>
@@ -1230,7 +1217,7 @@
 			<a href="##"></a>
 			<div class="pop_body" id="pickcontent"></div>
 		</div>
-		<script type="text/javascript" src="js/order_pickpoint.js"></script>
+		<script type="text/javascript" src="${ctx}/statics/js/order_pickpoint.js"></script>
 		<div class="choose" id="choose" style="display:none"></div>
 		<script type="text/javascript">
 			function closeCustomer() {

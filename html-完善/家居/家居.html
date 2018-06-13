@@ -13,33 +13,30 @@
 		<title>家居、家具、家装、厨具_网软志成B2B2C电商平台系统多用户商城系统模板</title>
 		<link rel="shortcut icon" href="#">
 		<link rel="icon" href="#">
-	<link rel="stylesheet" type="text/css" href="#">
+	<link rel="stylesheet" type="text/css" href="${ctx}/statics/css/category.css">
 		<script>
 			var jdpts = new Object();
 			jdpts._st = new Date().getTime();
 		</script>
-		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery-lazyload.js"></script>
-		<script type="text/javascript" src="js/common.js"></script>
-		<script type="text/javascript" src="js/global.js"></script>
-		<script src="./家居_files/tp.php"></script>
-	</head>
+		<script type="text/javascript" src="${ctx}/stiatics/js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="${ctx}/stiatics/js/jquery-lazyload.js"></script>
+		<script type="text/javascript" src="${ctx}/stiatics/js/common.js"></script>
+		<script type="text/javascript" src="${ctx}/stiatics/js/global.js"></script>
+			</head>
 
 	<body style="cursor: auto;">
 		<div>
 			<script>
 				document.write(unescape('%3Cscript id="_ju_" src="http://b2b2c.wygk.cn/js/global.js?_t=1528129347100" %3E%3C/script%3E'));
 			</script>
-			<script id="_ju_" src="js/global.js(1)"></script>
+			<script id="_ju_" src="${ctx}/stiatics/js/global.js(1)"></script>
 		</div>
-		<script type="text/javascript" src="./家居_files/index.php" id="scripts2s"></script>
-		<script type="text/javascript" src="./家居_files/index(1).php" id="scriptsad_popup"></script>
-		<script type="text/javascript" src="js/compare.js"></script>
-		<script type="text/javascript" src="js/utils.js"></script>
-		<script type="text/javascript" src="js/jquery.json.js"></script>
-		<script type="text/javascript" src="js/transport.js"></script>
-		<script type="text/javascript" src="js/user.js"></script>
-		<link rel="stylesheet" type="text/css" href="#">
+			<script type="text/javascript" src="${ctx}/stiatics/js/compare.js"></script>
+		<script type="text/javascript" src="${ctx}/stiatics/js/utils.js"></script>
+		<script type="text/javascript" src="${ctx}/stiatics/js/jquery.json.js"></script>
+		<script type="text/javascript" src="${ctx}/stiatics/js/transport.js"></script>
+		<script type="text/javascript" src="${ctx}/stiatics/js/user.js"></script>
+		<link rel="stylesheet" type="text/css" href="${ctx}/statics/css/wrzc_common.css">
 		<script language="javascript">
 			<!--
 			/*屏蔽所有的js错误*/
@@ -49,11 +46,11 @@
 			window.onerror = killerrors;
 			//-->
 		</script>
-		<script type="text/javascript" src="js/page.js"></script>
-		<script type="text/javascript" src="js/bubbleup.js"></script>
+		<script type="text/javascript" src="${ctx}/stiatics/js/page.js"></script>
+		<script type="text/javascript" src="${ctx}/stiatics/js/bubbleup.js"></script>
 		<div id="site-nav">
 			<div class="sn-container w1210">
-				<script type="text/javascript" src="js/common.min.js"></script>
+				<script type="text/javascript" src="${ctx}/stiatics/js/common.min.js"></script>
 				<font id="login-info" class="sn-login-info">
 					<a class="sn-login main-color" href="#">yiren</a><em>欢迎您回来！</em>
 					<a class="sn-register" href="#">退出</a>
@@ -127,19 +124,7 @@
 				</ul>
 			</div>
 		</div>
-		<!--<script>
-			header_login();
-
-			function header_login() {
-				Ajax.call('login_act_ajax.php', '', loginactResponse, 'GET', 'JSON', '1', '1');
-			}
-
-			function loginactResponse(result) {
-				var MEMBERZONE = document.getElementById('login-info');
-				MEMBERZONE.innerHTML = result.memberinfo;
-			}
-		</script>-->
-		<div class="header">
+	<div class="header">
 			<div class="w1210">
 				<div class="mall-logo">
 					<a href="#"><img src="img/logo.gif" width="250"></a>
@@ -149,7 +134,7 @@
 				</div>
 				<div class="mall-search">
 					<div id="search-tips" style="display:none;"></div>
-					<form class="mallSearch-form" method="get" name="searchForm" id="searchForm" action="http://b2b2c.wygk.cn/search.php" onsubmit="return checkSearchForm()">
+					<form class="mallSearch-form" method="get" name="searchForm" id="searchForm" action="##" onsubmit="return checkSearchForm()">
 						<input type="hidden" name="type" id="searchtype" value="0">
 						<div class="mallSearch-input">
 							<ul class="search-type">
@@ -1692,7 +1677,7 @@
 				}
 			}
 		</script>
-		<script type="text/javascript" src="js/nav.js"></script>
+		<script type="text/javascript" src="${ctx}/stiatics/js/nav.js"></script>
 		<div class="blank"></div>
 		<div class="w1210">
 			<div id="hotsale">
@@ -2409,7 +2394,7 @@
 				</div>
 				<div class="main">
 					<div id="filter" class="" style="">
-						<form method="GET" name="listform" action="http://b2b2c.wygk.cn/category.php">
+						<form method="GET" name="listform" action="##">
 							<div class="fore1">
 								<dl class="order">
 									<dd class="first ">
@@ -2467,7 +2452,7 @@
 						</form>
 					</div>
 
-					<form name="compareForm" action="http://b2b2c.wygk.cn/compare.php" method="post" onsubmit="return compareGoods(this);">
+					<form name="compareForm" action="##" method="post" onsubmit="return compareGoods(this);">
 						<ul class="list-grid clearfix">
 
 							<li class="item" id="li_227">
@@ -2960,7 +2945,7 @@ function selectPage(sel){
 						var select_spe = "请选择商品属性";
 					</script>
 
-					<script type="text/javascript" src="js/json2.js"></script>
+					<script type="text/javascript" src="${ctx}/stiatics/js/json2.js"></script>
 					<div id="compareBox" style="left: 572px;">
 						<div class="menu">
 							<ul>
@@ -3009,7 +2994,7 @@ function selectPage(sel){
 							})
 						})
 					</script>
-					<form name="selectPageForm" action="http://b2b2c.wygk.cn/category.php" method="get">
+					<form name="selectPageForm" action="##" method="get">
 						<div class="page">
 							<div class="page-wrap fr">
 								<div class="page-num fl">
@@ -3130,7 +3115,7 @@ function selectPage(sel){
 								<div class="cart-list quick-links-a" id="collectBox">
 									<i class="cart"></i>
 									<div class="span">购物车</div>
-									<span class="ECS_CARTINFO"><form id="formCart" name="formCart" method="post" action="http://b2b2c.wygk.cn/flow.php">
+									<span class="ECS_CARTINFO"><form id="formCart" name="formCart" method="post" action="##">
 	<span class="cart_num">0</span>
 									<div class="sidebar-cart-box">
 										<h3 class="sidebar-panel-header">
@@ -3265,7 +3250,7 @@ function selectPage(sel){
 					</div>
 
 					<div class="ECS_CARTINFO right-sidebar-panels">
-						<form id="formCart" name="formCart" method="post" action="http://b2b2c.wygk.cn/flow.php">
+						<form id="formCart" name="formCart" method="post" action="##">
 							<span class="cart_num">0</span>
 							<div class="sidebar-cart-box">
 								<h3 class="sidebar-panel-header">
@@ -3366,7 +3351,7 @@ function selectPage(sel){
 				<a class="pop-close" href="#"></a>
 			</div>
 			<div class="pop-con">
-				<form name="formLogin" action="http://b2b2c.wygk.cn/user.php" method="post" onsubmit="return user_login();">
+				<form name="formLogin" action="##" method="post" onsubmit="return user_login();">
 					<div class="form">
 						<div class="mt">
 							<h2>用户登陆</h2>
@@ -3392,7 +3377,7 @@ function selectPage(sel){
 									<input type="text" id="authcode" name="captcha" class="text text-1" tabindex="3" placeholder="验证码">
 								</div>
 								<label class="img fl">
-                    <img src="./家居_files/captcha.php" alt="captcha" style="vertical-align: middle;cursor: pointer;" onclick="this.src=&#39;captcha.php?is_login=1&amp;&#39;+Math.random()">
+                    <img src="##" alt="captcha" style="vertical-align: middle;cursor: pointer;" onclick="this.src=&#39;captcha.php?is_login=1&amp;&#39;+Math.random()">
                 </label>
 							</div>
 							<div class="safety" id="autoentry">
@@ -3488,7 +3473,7 @@ function selectPage(sel){
 				$(this).addClass('')
 			})
 		</script>
-		<script type="text/javascript" src="js/arrive_notice.js"></script>
+		<script type="text/javascript" src="${ctx}/stiatics/js/arrive_notice.js"></script>
 		<div class="tell-me-form" style="display: none; left: 701.5px; top: 271px;" id="tell-me-table">
 			<div class="pop-header"><span>到货通知</span>
 				<a href="#"></a>
@@ -3671,14 +3656,12 @@ function selectPage(sel){
 								var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
 								document.write(unescape("%3Cspan id='cnzz_stat_icon_1000200717'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000200717%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
 							</script><span id="cnzz_stat_icon_1000200717"><a href="#"><img border="0" hspace="0" vspace="0" src="img/pic1.gif"></a></span>
-							<script src="./家居_files/z_stat.php" type="text/javascript"></script>
-							<script src="./家居_files/core.php" charset="utf-8" type="text/javascript"></script>
 							<a href="#"><img src="img/button_old_41.gif" height="16" border="0" alt="QQ"> 394223545</a>
 							<a href="#"><img src="img/T1tm9.XdRnXXaHNz_X-16-16.gif" width="16" height="16" border="0" alt="淘宝旺旺">38306293</a>
 						</p>
 					</div>
 				</div>
-				<img src="./家居_files/cron.php" alt="" style="width:0px;height:0px;display:none;">
+				<img src="##" alt="" style="width:0px;height:0px;display:none;">
 				<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
 					<tbody>
 
@@ -3740,11 +3723,7 @@ function selectPage(sel){
 						</tr>
 					</tbody>
 				</table>
-				<!--<script type="text/javascript">
-					Ajax.call('api/okgoods.php', '', '', 'GET', 'JSON');
-					//预售
-					Ajax.call('pre_sale.php?act=check_order', '', '', 'GET', 'JSON');
-				</script>-->
+				
 				<script type="text/javascript" src="./家居_files/base.js"></script>
 			</div>
 		</div>
